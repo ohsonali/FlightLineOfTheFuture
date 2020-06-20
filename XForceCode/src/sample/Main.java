@@ -26,10 +26,12 @@ public class Main extends Application {
 
         String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
         String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33.pdf";
+        String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33.pdf";
+
 
         launch(args);
         System.out.println("hello");
-        File file = new File(bernardFile);
+        File file = new File(sonaliFile);
         PDDocument document = PDDocument.load(file);
 
         PDFTextStripper pdfStripper = new PDFTextStripper();
