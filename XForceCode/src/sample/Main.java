@@ -23,7 +23,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws IOException{
-        // hi 
+        // hi
         String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
         String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33.pdf";
         String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33.pdf";
