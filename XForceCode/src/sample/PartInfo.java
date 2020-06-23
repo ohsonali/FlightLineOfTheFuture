@@ -15,7 +15,6 @@ public class PartInfo {
         this.usable = new SimpleStringProperty(usable);
         //this.smr = new SimpleStringProperty(smr);
     }
-
     public String getFigure() {
         return figure.get();
     }

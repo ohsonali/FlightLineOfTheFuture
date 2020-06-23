@@ -31,7 +31,7 @@ public class Main extends Application {
 
         launch(args);
 
-        File file = new File(sonaliFile);
+        File file = new File(bernardFile);
         PDDocument document = PDDocument.load(file);
 
         PDFTextStripper pdfStripper = new PDFTextStripper();
