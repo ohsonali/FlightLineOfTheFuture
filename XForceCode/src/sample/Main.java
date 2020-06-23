@@ -14,11 +14,11 @@ import org.apache.pdfbox.text.PDFTextStripper;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage stage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 700, 600));
-        primaryStage.show();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 
@@ -26,11 +26,12 @@ public class Main extends Application {
         String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
         String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33.pdf";
         String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33.pdf";
+        String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
 
 
         launch(args);
 
-        File file = new File(bernardFile);
+        File file = new File(sonaliFile);
         PDDocument document = PDDocument.load(file);
 
         PDFTextStripper pdfStripper = new PDFTextStripper();
