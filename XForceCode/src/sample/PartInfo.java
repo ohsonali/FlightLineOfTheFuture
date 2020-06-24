@@ -55,6 +55,10 @@ public class PartInfo {
     public void setUsable(String usable){
         this.usable.set(usable);
     }
+    @Override
+    public String toString() {
+        return figure.get();
+    }
     /*public void setSmr(String smr){
         this.smr.set(smr);
     }*/
