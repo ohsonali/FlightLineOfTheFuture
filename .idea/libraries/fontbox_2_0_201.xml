@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="fontbox-2.0.201">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/fontbox-2.0.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/pdfbox-2.0.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/pdfbox-app-2.0.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/pdfbox-tools-2.0.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/preflight-2.0.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/preflight-app-2.0.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XForce/XForce/xmpbox-2.0.20.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/XForceCode/src" />
+    </SOURCES>
+  </library>
+</component>
