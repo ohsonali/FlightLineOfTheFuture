@@ -4,7 +4,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -27,7 +30,7 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 
 
-
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -41,11 +44,7 @@ public class Controller implements Initializable {
     @FXML TableColumn<PartInfo, String> unitsColumn;
     @FXML TableColumn<PartInfo, String> usableColumn;
     @FXML TableColumn<PartInfo, String> SMRColumn;*/
-
-    public void Clicked() {
-        System.out.println("a");
-    }
-
+    static int two = 2;
     @Override
     public void initialize (URL url, ResourceBundle rb){
 
@@ -80,8 +79,12 @@ public class Controller implements Initializable {
 
                     {
                         btn.setOnAction((ActionEvent event) -> {
-                            PartInfo PartInfo = getTableView().getItems().get(getIndex());
-                            System.out.println("selectedPartInfo: " + PartInfo);  //what does the button does
+                            PartInfo partInfo = getTableView().getItems().get(getIndex());
+                            try {
+                                partClicked(partInfo, event);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         });
                     }
 
@@ -121,4 +124,18 @@ public class Controller implements Initializable {
         parts.add(new PartInfo("123", "13", "1234", "lamp", "1", "A"));
         return parts;
     }
+
+    public void partClicked(PartInfo part, ActionEvent e) throws Exception {
+        Part.addPart(part);
+        openUserWindow(e);
+    }
+
+    public void openUserWindow(ActionEvent e) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
+        Scene scene = new Scene(root);
+        Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+
 }

@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67f27e0-3e0f-4bf5-9663-daa307497bb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/F9006.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/F9006Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -114,26 +119,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="416" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592952208190" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593025723023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593025723023" />
     <state x="459" y="348" key="FileChooserDialogImpl" timestamp="1592952235023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592952235023" />
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1592957635802">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1593035729613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592957635802" />
-    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1592957635802">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593035729613" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1593035729613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592957635802" />
-    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1592957635802">
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593035729613" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1593035729613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592957635802" />
-    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1592957635802">
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593035729613" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1593035729613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592957635802" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593035729613" />
     <state width="1877" height="198" key="GridCell.Tab.1.bottom" timestamp="1592957635802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
