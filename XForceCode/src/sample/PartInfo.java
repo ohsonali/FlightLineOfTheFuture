@@ -15,7 +15,6 @@ public class PartInfo {
         this.usable = new SimpleStringProperty(usable);
         //this.smr = new SimpleStringProperty(smr);
     }
-
     public String getFigure() {
         return figure.get();
     }
@@ -55,6 +54,10 @@ public class PartInfo {
     }
     public void setUsable(String usable){
         this.usable.set(usable);
+    }
+    @Override
+    public String toString() {
+        return figure.get();
     }
     /*public void setSmr(String smr){
         this.smr.set(smr);

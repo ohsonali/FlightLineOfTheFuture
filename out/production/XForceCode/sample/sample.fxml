@@ -3,19 +3,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <TableView fx:id="tableView" layoutX="2.0" layoutY="1.0" prefHeight="527.0" prefWidth="903.0">
-        <columns>
-          <TableColumn fx:id="figureColumn" prefWidth="82.0" text="FIGURE" />
-          <TableColumn fx:id="indexColumn" prefWidth="82.0" text="INDEX" />
-            <TableColumn minWidth="0.0" prefWidth="166.0" text="PART NUMBER" />
-            <TableColumn fx:id="cageColumn" prefWidth="82.0" text="CAGE" />
-            <TableColumn fx:id="descriptionColumn" prefWidth="194.0" text="DESCRIPTION" />
-            <TableColumn fx:id="unitsColumn" minWidth="0.0" prefWidth="100.0" text="UNITS PER ASSY" />
-            <TableColumn fx:id="usableColumn" minWidth="0.0" prefWidth="115.0" text="USABLE ON CODE" />
-            <TableColumn fx:id="SMRColumn" prefWidth="78.0" text="SMR CODE" />
-        </columns>
-      </TableView>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="699.0" stylesheets="/sample/sample.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <TableView fx:id="tableView" layoutX="1.0" layoutY="1.0" prefHeight="390.0" prefWidth="699.0" />
    </children>
 </AnchorPane>
