@@ -1,9 +1,9 @@
 package sample;
 
 public class Part {
-    private static PartInfo currentPart;
-    private static String JCN;
-    private static String Quantity;
+    private static PartInfo currentPart = null;
+    private static String JCN = null;
+    private static String Quantity = null;
 
     public static void addPart(PartInfo part) {
         currentPart = part;
