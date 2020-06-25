@@ -60,12 +60,12 @@ public class Main extends Application {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (!Desktop.isDesktopSupported()) {
+            /*if (!Desktop.isDesktopSupported()) {
                 System.out.println("not supported");
                 System.exit(0);
             }
             Desktop desktop = Desktop.getDesktop();
-            desktop.open(file2);
+            desktop.open(file2);*/
         }
     }
 
