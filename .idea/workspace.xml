@@ -20,20 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cdab001-8481-44e5-b32f-fd912124fcd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/OurPDFTextStripper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/ParsedInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/XForceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/XForceCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/F9006.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/F9006Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/OurPDFTextStripper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PDFLeanFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Part.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/OurPDFTextStripper.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,46 +116,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="416" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593050345649" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593025723023">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593632018343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593025723023" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593632018343" />
     <state x="459" y="348" key="FileChooserDialogImpl" timestamp="1593050344146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593050344146" />
-    <state width="895" height="377" key="GridCell.Tab.0.bottom" timestamp="1593564003621">
+    <state width="1107" height="380" key="GridCell.Tab.0.bottom" timestamp="1593634057593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="895" height="377" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593564003621" />
-    <state width="895" height="377" key="GridCell.Tab.0.center" timestamp="1593564003620">
+    <state width="1107" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593634057593" />
+    <state width="1107" height="380" key="GridCell.Tab.0.center" timestamp="1593634057593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="895" height="377" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593564003620" />
-    <state width="895" height="377" key="GridCell.Tab.0.left" timestamp="1593564003620">
+    <state width="1107" height="380" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593634057593" />
+    <state width="1107" height="380" key="GridCell.Tab.0.left" timestamp="1593634057592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="895" height="377" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593564003620" />
-    <state width="895" height="377" key="GridCell.Tab.0.right" timestamp="1593564003620">
+    <state width="1107" height="380" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593634057592" />
+    <state width="1107" height="380" key="GridCell.Tab.0.right" timestamp="1593634057593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="895" height="377" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593564003620" />
-    <state width="859" height="196" key="GridCell.Tab.1.bottom" timestamp="1593560917235">
+    <state width="1107" height="380" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593634057593" />
+    <state width="859" height="196" key="GridCell.Tab.1.bottom" timestamp="1593566636288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="859" height="196" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593560917235" />
-    <state width="859" height="196" key="GridCell.Tab.1.center" timestamp="1593560917235">
+    <state width="859" height="196" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state width="859" height="196" key="GridCell.Tab.1.center" timestamp="1593566636288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="859" height="196" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593560917235" />
-    <state width="859" height="196" key="GridCell.Tab.1.left" timestamp="1593560917235">
+    <state width="859" height="196" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state width="859" height="196" key="GridCell.Tab.1.left" timestamp="1593566636288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="859" height="196" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593560917235" />
-    <state width="859" height="196" key="GridCell.Tab.1.right" timestamp="1593560917235">
+    <state width="859" height="196" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state width="859" height="196" key="GridCell.Tab.1.right" timestamp="1593566636288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="859" height="196" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593560917235" />
+    <state width="859" height="196" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
     <state x="346" y="278" key="MultipleFileMergeDialog" timestamp="1593050284722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

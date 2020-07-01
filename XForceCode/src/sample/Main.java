@@ -31,19 +31,14 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws IOException {
-        String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-        String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33 (2).pdf";
-        String bernard9006File = "C:/Users/berna_000/Desktop/my9006.pdf";
-        String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33.pdf";
-        String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-        String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";
+
+        int x = Utils.rightStart - Utils.leftStart;
 
 
-        launch(args);
-        File file = new File(bernardFile);
+        File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(bernard9006File);
+        File file2 = new File(Utils.bernard9006File);
         PDDocument document2 = PDDocument.load(file2);
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
@@ -74,18 +69,33 @@ The width of the columns are always the same.
 */
 
 
-
-        OurPDFTextStripper pdfStripperArea = new OurPDFTextStripper();
-        Rectangle rect = new Rectangle( 37, 46 ,51, 671);
+        PDFTextStripperByArea pdfStripperArea = new PDFTextStripperByArea();
+        Rectangle rect = new Rectangle( Utils.leftStart, Utils.startHeight ,Utils.leftStart + Utils.figureWidth, 29);
         pdfStripperArea.addRegion("Figure and Index", rect);
         PDPage docPage = document.getPage(2);
         pdfStripperArea.extractRegions(docPage);
         String regionText = pdfStripperArea.getTextForRegion("Figure and Index");
         System.out.println(regionText);
 
+
+        PDFLeanFinder leanFinder = new PDFLeanFinder();
+        leanFinder.setStartPage(3);
+        leanFinder.setEndPage(4);
+        leanFinder.getText(document);
+        System.out.println(leanFinder.left);
+        for (int i = 0; i < leanFinder.yPos.size(); i ++) {
+            System.out.println(leanFinder.yPos.get(i));
+        }
+
+
         //System.out.println(text);
 
         document.close();
+
+        launch(args);
+
+
+
 
         if (Part.getJCN() != null && Part.getQuantity() != null && Part.getCurrentPart() != null) {
 
