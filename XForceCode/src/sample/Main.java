@@ -5,14 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
 import java.io.*;
 import java.io.IOException;
+
+import org.apache.pdfbox.pdfparser.PDFParser;
+import org.apache.pdfbox.text.PDFTextStripperByArea;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.text.PDFTextStripper;
-import java.awt.Desktop;
 
 public class Main extends Application {
 
@@ -27,28 +32,62 @@ public class Main extends Application {
 
     public static void main(String[] args) throws IOException {
         String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-        String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33.pdf";
+        String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33 (2).pdf";
+        String bernard9006File = "C:/Users/berna_000/Desktop/my9006.pdf";
         String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33.pdf";
         String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
         String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";
 
 
         launch(args);
+        File file = new File(bernardFile);
+        PDDocument document = PDDocument.load(file);
+
+        File file2 = new File(bernard9006File);
+        PDDocument document2 = PDDocument.load(file2);
+
+        //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
+        //pdfStripper.setStartPage(3);
+        //pdfStripper.setEndPage(4);
+        //String text = pdfStripper.getText(document);
+/*
+1. Find column widths, table height, and table starting height (which should be the same
+   between both pages), and find the starting x coordinate for the two types of pages
+   (left leaning and right leaning). Stores these as unchanging variables.
+2. Find out whether the page is right or left leaning by looking at the x-coordinate
+   of the first character on the page (which should be F in Figure)
+3. Look at the Figure and Index No. rectangle. Put all the y-coordinate positions of the top of the
+   character into an array (ypos) -> put in new class. Put all the figure and index numbers into an
+   ArrayList of String[7] Arrays.
+4. Calculate rectangle dimensions (next y-coordinate position - current y-coordinate position).
+   First one could be the first line under figure and index no. Note: make sure to grab
+   the top of the letter, might be very sensitive.
+5. For every row, find the column entries. [outer for loop is row, inner for loop is column].
+   Look at every specific box and put that information into the array.
+6. Create PartInfo objects using information in the ArrayList of Arrays.
+
+Base assumptions: Pages are either left or right leaning and for each respective type, the first
+character has the same x-coordinate as the rest of the same type.
+The height of the table is always the same, and the table always starts at the same pixel height.
+The width of the columns are always the same.
+
+*/
+
+
+
+        OurPDFTextStripper pdfStripperArea = new OurPDFTextStripper();
+        Rectangle rect = new Rectangle( 37, 46 ,51, 671);
+        pdfStripperArea.addRegion("Figure and Index", rect);
+        PDPage docPage = document.getPage(2);
+        pdfStripperArea.extractRegions(docPage);
+        String regionText = pdfStripperArea.getTextForRegion("Figure and Index");
+        System.out.println(regionText);
+
+        //System.out.println(text);
+
+        document.close();
 
         if (Part.getJCN() != null && Part.getQuantity() != null && Part.getCurrentPart() != null) {
-            File file = new File(sonaliFile);
-            PDDocument document = PDDocument.load(file);
-
-            File file2 = new File(sonali9006File);
-            PDDocument document2 = PDDocument.load(file2);
-
-            PDFTextStripper pdfStripper = new PDFTextStripper();
-
-            String text = pdfStripper.getText(document);
-
-            System.out.println(text);
-
-            document.close();
 
             try {
                 PDAcroForm pDAcroForm = document2.getDocumentCatalog().getAcroForm();
@@ -60,12 +99,12 @@ public class Main extends Application {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            /*if (!Desktop.isDesktopSupported()) {
+            if (!Desktop.isDesktopSupported()) {
                 System.out.println("not supported");
                 System.exit(0);
             }
             Desktop desktop = Desktop.getDesktop();
-            desktop.open(file2);*/
+            desktop.open(file2);
         }
     }
 

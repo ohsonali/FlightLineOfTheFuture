@@ -44,7 +44,7 @@ public class Controller implements Initializable {
     @FXML TableColumn<PartInfo, String> unitsColumn;
     @FXML TableColumn<PartInfo, String> usableColumn;
     @FXML TableColumn<PartInfo, String> SMRColumn;*/
-    static int two = 2;
+
     @Override
     public void initialize (URL url, ResourceBundle rb){
 
@@ -64,7 +64,7 @@ public class Controller implements Initializable {
 
                     PartInfo clickedRow = row.getItem();
                     //printRow(clickedRow);
-                    System.out.println(clickedRow.getFigure());
+                    System.out.println("green");
                 }
             });
             return row ;
@@ -120,8 +120,8 @@ public class Controller implements Initializable {
 
     public ObservableList<PartInfo> getPartInfo(){
         ObservableList<PartInfo> parts = FXCollections.observableArrayList();
-        parts.add(new PartInfo("12", "13", "1234", "lamp", "1", "A"));
-        parts.add(new PartInfo("123", "13", "1234", "lamp", "1", "A"));
+        parts.add(new PartInfo("24", "S241376-101", "78366", "GASKET", "1", "A"));
+        parts.add(new PartInfo("25", "4596", "08806", "LAMP", "1", "A"));
         return parts;
     }
 
