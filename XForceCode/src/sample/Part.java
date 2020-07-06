@@ -15,6 +15,7 @@ public class Part {
     }
 
     public static void removePart(PartInfo part) {
+        //this is wrong, access the part and add setters
         currentPart = null;
         JCN = null;
         Quantity = null;
