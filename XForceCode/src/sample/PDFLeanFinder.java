@@ -24,10 +24,10 @@ public class PDFLeanFinder extends PDFTextStripperByArea {
         if (first) {
             System.out.println("First Y: " + pos.getY());
             System.out.println("First X: " + pos.getX());
-            if (pos.getX() > Utils.leftStart - 2 && pos.getX() < Utils.leftStart + 2) {
+            if (pos.getX() > Utils.firstLeft - 2 && pos.getX() < Utils.firstLeft + 2) {
                 left = true;
                 x = 0;
-            } else if (pos.getX() > Utils.rightStart - 2 && pos.getX() < Utils.rightStart + 2) {
+            } else if (pos.getX() > Utils.firstRight - 2 && pos.getX() < Utils.firstRight + 2) {
                 left = false;
                 x = Utils.rightStart - Utils.leftStart;
             } else {
