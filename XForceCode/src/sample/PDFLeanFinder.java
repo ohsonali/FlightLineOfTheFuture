@@ -36,7 +36,7 @@ public class PDFLeanFinder extends PDFTextStripperByArea {
             first = false;
         }
         if (pos.getX() > Utils.leftStart + x && pos.getX() < Utils.leftStart + x + Utils.figureWidth && pos.getY()
-                > Utils.startHeight && pos.getY() < Utils.tableHeight - Utils.startHeight) {
+                > Utils.startHeight && pos.getY() < Utils.tableHeight + Utils.startHeight) {
             int currentY = (int) (pos.getY() - pos.getHeight());
             if (!yPos.contains(currentY)) {
                 yPos.add(currentY);

@@ -70,7 +70,7 @@ The width of the columns are always the same.
 
 
         PDFTextStripperByArea pdfStripperArea = new PDFTextStripperByArea();
-        Rectangle rect = new Rectangle( Utils.leftStart, Utils.startHeight ,Utils.leftStart + Utils.figureWidth, 29);
+        Rectangle rect = new Rectangle( Utils.leftStart, Utils.startHeight , Utils.figureWidth, Utils.tableHeight);
         pdfStripperArea.addRegion("Figure and Index", rect);
         PDPage docPage = document.getPage(2);
         pdfStripperArea.extractRegions(docPage);
