@@ -84,7 +84,9 @@ First entry will always be the figure number.
         System.out.println(leanFinder.left);
 
         Collections.sort(leanFinder.yPos);
+
         leanFinder.yPos.add(Utils.startHeight+Utils.tableHeight);
+
         for (int i = 0; i < leanFinder.yPos.size(); i ++) {
             System.out.println(leanFinder.yPos.get(i));
         }
@@ -126,12 +128,36 @@ First entry will always be the figure number.
             }
         }
 
-        for (int i = 0; i<ParsedInfo.parts.size(); i++){
+
+
+        for (int i = 0; i <ParsedInfo.parts.size(); i++) {
+            String[] partLines = stringLines(ParsedInfo.parts.get(i)[1]);
+            if (partLines.length > 1) {
+                String[] cageLines = stringLines(ParsedInfo.parts.get(i)[2]);
+                String[] smrLines = stringLines(ParsedInfo.parts.get(i)[6]);
+                for (int j = 0; j < partLines.length; j++) {
+                    String[] newRow = new String[xPos.size()];
+                    newRow[0] = ParsedInfo.parts.get(i)[0];
+                    newRow[3] = ParsedInfo.parts.get(i)[3];
+                    newRow[4] = ParsedInfo.parts.get(i)[4];
+                    newRow[5] = ParsedInfo.parts.get(i)[5];
+
+                    newRow[1] = partLines[j].replace(" 4", " =");
+                    newRow[2] = cageLines[j];
+                    newRow[6] = smrLines[j];
+                    ParsedInfo.parts.add(i + j + 1, newRow);
+                }
+                ParsedInfo.parts.remove(i);
+            }
+        }
+
+
+/*        for (int i = 0; i<ParsedInfo.parts.size(); i++){
             for(int j = 0; j<7; j++){
                 System.out.print(ParsedInfo.parts.get(i)[j]+ "         ");
             }
             System.out.println();
-        }
+        }*/
 
 //
 //        for every entry in ypos - the last entry = y:
@@ -168,18 +194,17 @@ First entry will always be the figure number.
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (!Desktop.isDesktopSupported()) {
+            /*if (!Desktop.isDesktopSupported()) {
                 System.out.println("not supported");
                 System.exit(0);
             }
             Desktop desktop = Desktop.getDesktop();
-            desktop.open(file2);
+            desktop.open(file2);*/
         }
+    }
 
-
-
-
-
+    public static String[] stringLines(String str){
+        return str.split("\r\n|\r|\n");
     }
 
 
