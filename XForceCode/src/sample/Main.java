@@ -39,12 +39,12 @@ public class Main extends Application {
         int x = Utils.rightStart - Utils.leftStart;
 
 
-        File file = new File(Utils.sonaliFile);
+        File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(Utils.sonali9006File);
+        File file2 = new File(Utils.bernard9006File);
         PDDocument document2 = PDDocument.load(file2);
-
+        
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);
         //pdfStripper.setEndPage(4);
@@ -131,16 +131,28 @@ First entry will always be the figure number.
 
 
         for (int i = 0; i <ParsedInfo.parts.size(); i++) {
-            String[] partLines = stringLines(ParsedInfo.parts.get(i)[1]);
+            String figure = ParsedInfo.parts.get(i)[0];
+            String partNumber = ParsedInfo.parts.get(i)[1];
+            String cage = ParsedInfo.parts.get(i)[2];
+            String description = ParsedInfo.parts.get(i)[3];
+            String units = ParsedInfo.parts.get(i)[4];
+            String usable = ParsedInfo.parts.get(i)[5];
+            String smr = ParsedInfo.parts.get(i)[6];
+            String[] partLines = stringLines(partNumber);
+            if (figure.trim().length() == 0 && partNumber.trim().length() == 0 && cage.trim().length() == 0 && description.trim().length() == 0 &&
+                    units.trim().length() == 0 && usable.trim().length() == 0 && smr.trim().length() == 0) {
+                ParsedInfo.parts.remove(i);
+            }
+
             if (partLines.length > 1) {
-                String[] cageLines = stringLines(ParsedInfo.parts.get(i)[2]);
-                String[] smrLines = stringLines(ParsedInfo.parts.get(i)[6]);
+                String[] cageLines = stringLines(cage);
+                String[] smrLines = stringLines(smr);
                 for (int j = 0; j < partLines.length; j++) {
                     String[] newRow = new String[xPos.size()];
-                    newRow[0] = ParsedInfo.parts.get(i)[0];
-                    newRow[3] = ParsedInfo.parts.get(i)[3];
-                    newRow[4] = ParsedInfo.parts.get(i)[4];
-                    newRow[5] = ParsedInfo.parts.get(i)[5];
+                    newRow[0] = figure;
+                    newRow[3] = description;
+                    newRow[4] = units;
+                    newRow[5] = usable;
 
                     newRow[1] = partLines[j].replace(" 4", " =");
                     newRow[2] = cageLines[j];

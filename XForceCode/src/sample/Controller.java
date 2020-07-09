@@ -52,7 +52,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize (URL url, ResourceBundle rb){
         ParsedInfo.figureNumber = ParsedInfo.parts.get(0)[0];
-        if (ParsedInfo.parts.get(0)[3].equals("\n")) {
+        if (ParsedInfo.parts.get(0)[3].trim().length() == 0) {
             ParsedInfo.figureDescription = "Not Available";
         } else {ParsedInfo.figureDescription = ParsedInfo.parts.get(0)[3];}
         figure.setText("Figure: " + ParsedInfo.figureNumber);
@@ -133,8 +133,7 @@ public class Controller implements Initializable {
     public ObservableList<PartInfo> getPartInfo(){
         ObservableList<PartInfo> parts = FXCollections.observableArrayList();
 
-        for(int i = 0; i < ParsedInfo.parts.size(); i++){
-
+        for(int i = 1; i < ParsedInfo.parts.size(); i++){
             String figure = ParsedInfo.parts.get(i)[0];
             String partNumber = ParsedInfo.parts.get(i)[1];
             String cage = ParsedInfo.parts.get(i)[2];
@@ -143,9 +142,7 @@ public class Controller implements Initializable {
             String usable = ParsedInfo.parts.get(i)[5];
             String smr = ParsedInfo.parts.get(i)[6];
 
-            if (figure.equals("\n") && partNumber.equals("\n") && cage.equals("\n") && description.equals("\n") &&
-                    units.equals("\n") && usable.equals("\n") && smr.equals("\n")) {ParsedInfo.parts.remove(i);}
-            else {parts.add(new PartInfo(figure, partNumber, cage, description, units, usable, smr));}
+            parts.add(new PartInfo(figure, partNumber, cage, description, units, usable, smr));
 
         }
         return parts;
