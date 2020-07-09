@@ -26,6 +26,7 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
@@ -35,8 +36,11 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import static sample.ParsedInfo.figureNumber;
+
 public class Controller implements Initializable {
     @FXML TableView<PartInfo> tableView;
+    @FXML Text figure, figureDescription;
     /*@FXML TableColumn<PartInfo, String> figureColumn;
     @FXML TableColumn<PartInfo, String> indexColumn;
     @FXML TableColumn<PartInfo, String> cageColumn;
@@ -47,13 +51,21 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
+        ParsedInfo.figureNumber = ParsedInfo.parts.get(0)[0];
+        if (ParsedInfo.parts.get(0)[3].equals("\n")) {
+            ParsedInfo.figureDescription = "Not Available";
+        } else {ParsedInfo.figureDescription = ParsedInfo.parts.get(0)[3];}
+        figure.setText("Figure: " + ParsedInfo.figureNumber);
+        figureDescription.setText("Figure Description: " + ParsedInfo.figureDescription);
 
-        TableColumn figureColumn = new TableColumn("Figure");
-        TableColumn indexColumn = new TableColumn("Index");
+
+        TableColumn figureColumn = new TableColumn("Index");
+        TableColumn partColumn = new TableColumn("Part Number");
         TableColumn cageColumn = new TableColumn("Cage");
         TableColumn descriptionColumn = new TableColumn("Description");
         TableColumn unitsColumn = new TableColumn("Units");
         TableColumn usableColumn = new TableColumn("Usable");
+        TableColumn smrColumn = new TableColumn("SMR Code");
         TableColumn<PartInfo, Void> colBtn = new TableColumn("Button Column");
 
         tableView.setRowFactory(tv -> {
@@ -75,7 +87,7 @@ public class Controller implements Initializable {
             public TableCell<PartInfo, Void> call(final TableColumn<PartInfo, Void> param) {
                 final TableCell<PartInfo, Void> cell = new TableCell<PartInfo, Void>() {
 
-                    private final Button btn = new Button("Purchase");
+                    private final Button btn = new Button("Order");
 
                     {
                         btn.setOnAction((ActionEvent event) -> {
@@ -104,24 +116,38 @@ public class Controller implements Initializable {
 
         colBtn.setCellFactory(cellFactory);
 
-        //TableColumn SMRColumn = new TableColumn("smr");
-        tableView.getColumns().addAll(figureColumn, indexColumn, cageColumn, descriptionColumn, unitsColumn, usableColumn, colBtn);
+        tableView.getColumns().addAll(figureColumn, partColumn, cageColumn, descriptionColumn, unitsColumn, usableColumn, smrColumn, colBtn);
 
 
         figureColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("figure"));
-        indexColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("index"));
+        partColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("part"));
         cageColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("cage"));
         descriptionColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("description"));
         unitsColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("units"));
         usableColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("usable"));
+        smrColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("smr"));
 
         tableView.setItems(getPartInfo());
     }
 
     public ObservableList<PartInfo> getPartInfo(){
         ObservableList<PartInfo> parts = FXCollections.observableArrayList();
-        parts.add(new PartInfo("24", "S241376-101", "78366", "GASKET", "1", "A"));
-        parts.add(new PartInfo("25", "4596", "08806", "LAMP", "1", "A"));
+
+        for(int i = 0; i < ParsedInfo.parts.size(); i++){
+
+            String figure = ParsedInfo.parts.get(i)[0];
+            String partNumber = ParsedInfo.parts.get(i)[1];
+            String cage = ParsedInfo.parts.get(i)[2];
+            String description = ParsedInfo.parts.get(i)[3];
+            String units = ParsedInfo.parts.get(i)[4];
+            String usable = ParsedInfo.parts.get(i)[5];
+            String smr = ParsedInfo.parts.get(i)[6];
+
+            if (figure.equals("\n") && partNumber.equals("\n") && cage.equals("\n") && description.equals("\n") &&
+                    units.equals("\n") && usable.equals("\n") && smr.equals("\n")) {ParsedInfo.parts.remove(i);}
+            else {parts.add(new PartInfo(figure, partNumber, cage, description, units, usable, smr));}
+
+        }
         return parts;
     }
 
