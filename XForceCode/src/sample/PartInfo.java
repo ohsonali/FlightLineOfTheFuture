@@ -3,7 +3,12 @@ package sample;
 import javafx.beans.property.SimpleStringProperty;
 
 public class PartInfo {
-    private SimpleStringProperty figure, index, cage, description, units, usable;
+    private SimpleStringProperty figure;
+    private SimpleStringProperty index;
+    private SimpleStringProperty cage;
+    private SimpleStringProperty description;
+    private SimpleStringProperty units;
+    private SimpleStringProperty usable;
 
 
     public PartInfo(String figure, String index, String cage, String description, String units, String usable){
