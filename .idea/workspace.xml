@@ -1,42 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="790ecd73-6192-4b25-be8b-b7b5f9745242" name="Default Changelist" comment="tryingtopull">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="e124754a-620d-459d-b33f-0846ac8c8ec9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_201.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="e124754a-620d-459d-b33f-0846ac8c8ec9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_201.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+      <change beforePath="$PROJECT_DIR$/XForceCode/XForceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/XForceCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/ParsedInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/ParsedInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/sample.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/ParsedInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/ParsedInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/sample.fxml" afterDir="false" />
+<<<<<<< HEAD
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="1515">
               <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6963#6964#0" expanded="true" />
-                <element signature="e#7009#7010#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="142">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
             </state>
           </provider>
         </entry>
@@ -54,27 +80,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/sample.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Part.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -93,22 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="120" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="120" />
-              <folding>
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#846#847#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#956#957#0" expanded="true" />
-                <element signature="e#987#988#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,13 +145,17 @@
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/sample.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -150,18 +164,11 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>partclick</find>
-      <find>controller</find>
-      <find>Main</find>
-      <find>figure</find>
-      <find>currentrow</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -180,10 +187,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="805" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -191,6 +198,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,36 +222,44 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594252745010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594252749310" />
+    <property name="project.structure.last.edited" value="Project" />
+=======
+  <component name="ProjectId" id="1dh5qVGJt663rHyfgWYfRs1Apbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+=======
+  <component name="ProjectId" id="1dh5qVGJt663rHyfgWYfRs1Apbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592864563720" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="XForceCode" />
-      <option name="VM_PARAMETERS" value="--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/../javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -264,48 +281,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="790ecd73-6192-4b25-be8b-b7b5f9745242" name="Default Changelist" comment="" />
-      <created>1592949317807</created>
+      <changelist id="e124754a-620d-459d-b33f-0846ac8c8ec9" name="Default Changelist" comment="" />
+      <created>1592609965699</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592949317807</updated>
+      <updated>1592609965699</updated>
     </task>
-    <task id="LOCAL-00001" summary="workingTable">
-      <created>1592952025066</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1592952025066</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1592954478256</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1592954478256</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test">
-      <created>1592954522554</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1592954522554</updated>
-    </task>
-    <task id="LOCAL-00004" summary="tryingtopull">
-      <created>1592954648880</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1592954648880</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="805" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -314,7 +304,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49930555" weight="0.32882273" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49513888" visible="true" weight="0.37026647" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49513888" weight="0.36944443" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,45 +334,22 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+<<<<<<< HEAD
+<<<<<<< HEAD
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workingTable" />
@@ -408,12 +375,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/F9006.fxml" />
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/confirm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" selection-start-column="38" selection-end-column="38" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/hs_err_pid29968.log" />
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/OurPDFTextStripper.java">
@@ -424,12 +391,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -438,10 +405,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/confirmController.java">
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="1515">
+          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Part.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -456,22 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="120" selection-start-line="8" selection-start-column="117" selection-end-line="8" selection-end-column="120" />
-          <folding>
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,51 +458,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/confirmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/sample.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6963#6964#0" expanded="true" />
-            <element signature="e#7009#7010#0" expanded="true" />
-          </folding>
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+        <state relative-caret-position="142">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
         </state>
       </provider>
     </entry>
@@ -628,5 +577,91 @@
         </settings>
       </state>
     </states>
+=======
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593050409069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593050409069" />
+    <state x="592" y="416" key="DetectedRootsChooserDialog" timestamp="1593050345649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="592" y="416" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593050345649" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593632018343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593632018343" />
+    <state x="459" y="348" key="FileChooserDialogImpl" timestamp="1594318606244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594318606244" />
+    <state width="1109" height="386" key="GridCell.Tab.0.bottom" timestamp="1594323849849">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1109" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594323849849" />
+    <state width="1109" height="386" key="GridCell.Tab.0.center" timestamp="1594323849848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1109" height="386" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594323849848" />
+    <state width="1109" height="386" key="GridCell.Tab.0.left" timestamp="1594323849847">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1109" height="386" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594323849847" />
+    <state width="1109" height="386" key="GridCell.Tab.0.right" timestamp="1594323849848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1109" height="386" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594323849848" />
+    <state width="859" height="196" key="GridCell.Tab.1.bottom" timestamp="1593566636288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="859" height="196" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state width="859" height="196" key="GridCell.Tab.1.center" timestamp="1593566636288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="859" height="196" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state width="859" height="196" key="GridCell.Tab.1.left" timestamp="1593566636288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="859" height="196" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state width="859" height="196" key="GridCell.Tab.1.right" timestamp="1593566636288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="859" height="196" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
+    <state x="346" y="278" key="MultipleFileMergeDialog" timestamp="1594318558446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="346" y="278" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594318558446" />
+    <state x="275" y="105" key="SettingsEditor" timestamp="1594318610255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="275" y="105" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594318610255" />
+    <state x="121" y="205" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592957251028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="121" y="205" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592957251028" />
+    <state x="288" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593559729882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="288" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593559729882" />
+    <state x="681" y="308" key="git4idea.merge.GitPullDialog" timestamp="1594318535315">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594318535315" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="sample.Controller$1" fieldName="tableRow" />
+        <PinnedItemInfo typeName="sample.Controller$1" fieldName="tableRowUpdateObserver" />
+      </pinned-members>
+    </pin-to-top-manager>
+<<<<<<< HEAD
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
+=======
+>>>>>>> 7f189821f6e8694f1965e624985706dff61f1b66
   </component>
 </project>
