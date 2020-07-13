@@ -29,12 +29,18 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static sample.ParsedInfo.figureNumber;
 
@@ -150,11 +156,37 @@ public class Controller implements Initializable {
 
     public void partClicked(PartInfo part, ActionEvent e) throws Exception {
         Part.addPart(part);
-        openUserWindow(e);
+        String partNumber = part.getPart().trim();
+        Document doc = Jsoup.connect("https://www.nsncenter.com/NSNSearch?q=" + partNumber).get();
+        Elements rows = doc.select("tr");
+        for (Element row : rows ) {
+            String[] entry = new String[3];
+            Elements nsns = row.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
+            Elements cages = row.select("a[href^='https://www.cagecode.info/']");
+            // code assumes we will only find one nsns and one cages per row
+            for (Element nsn : nsns) {
+                entry[0] = nsn.text();
+                Pattern descriptions = Pattern.compile(",'name':'(.*?)','category':'");
+                Matcher matcher = descriptions.matcher(nsn.attr("onclick"));
+                while (matcher.find()) {
+                    entry[1] = matcher.group(1);
+                }
+            }
+            String cageStrings = "";
+            for (Element cage : cages) {
+                cageStrings += " " + cage.text();
+            }
+            entry[2] = cageStrings;
+            if (entry[0] != null) {
+                ParsedInfo.nsn.add(entry);
+            }
+        }
+        openNSNWindow(e);
     }
 
-    public void openUserWindow(ActionEvent e) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
+
+    public void openNSNWindow (ActionEvent e) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("nsn.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);

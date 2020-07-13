@@ -41,39 +41,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws IOException {
-        String dummyPartNumber = "5D0210-212";
-        Document doc = Jsoup.connect("https://www.nsncenter.com/NSNSearch?q=" + dummyPartNumber).get();
-        /*
-        Elements links = doc.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
-        for (Element link : links) {
-            System.out.println("1");
-            System.out.println(link.text());
-        }
-         */
 
-        Elements rows = doc.select("tr");
-        for (Element row : rows ) {
-            String[] entry = new String[3];
-            Elements nsns = row.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
-            Elements cages = row.select("a[href^='https://www.cagecode.info/']");
-            // code assumes we will only find one nsns and one cages per row
-            for (Element nsn : nsns) {
-                entry[0] = nsn.text();
-                Pattern descriptions = Pattern.compile(",'name':'(.*?)','category':'");
-                Matcher matcher = descriptions.matcher(nsn.attr("onclick"));
-                while (matcher.find()) {
-                    entry[1] = matcher.group(1);
-                }
-            }
-            String cageStrings = "";
-            for (Element cage : cages) {
-                cageStrings += " " + cage.text();
-            }
-            entry[2] = cageStrings;
-            if (entry[0] != null) {
-                ParsedInfo.nsn.add(entry);
-            }
-        }
 
         /*
         //Testing nsn scraper
@@ -83,13 +51,13 @@ public class Main extends Application {
             }
             System.out.println();
         }
-        System.exit(0);
         */
 
-        File file = new File(Utils.bernardFile);
+
+        File file = new File(Utils.sonaliFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(Utils.bernard9006File);
+        File file2 = new File(Utils.sonali9006File);
         PDDocument document2 = PDDocument.load(file2);
         
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
