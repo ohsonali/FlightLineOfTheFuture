@@ -173,8 +173,15 @@ public class Controller implements Initializable {
                 }
             }
             String cageStrings = "";
+            int counter = 0;
             for (Element cage : cages) {
-                cageStrings += " " + cage.text();
+                if (counter == 5) {
+                    cageStrings += "\n" + cage.text() + " ";
+                    counter = 0;
+                } else {
+                    cageStrings += cage.text() + " ";
+                }
+                counter += 1;
             }
             entry[2] = cageStrings;
             if (entry[0] != null) {
