@@ -36,9 +36,6 @@ public class Main extends Application {
 
     public static void main(String[] args) throws IOException {
 
-        int x = Utils.rightStart - Utils.leftStart;
-
-
         File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
 
