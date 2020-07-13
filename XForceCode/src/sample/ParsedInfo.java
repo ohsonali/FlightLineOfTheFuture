@@ -6,4 +6,7 @@ public class ParsedInfo {
     public static ArrayList<String[]> parts = new ArrayList<>();
     public static String figureNumber;
     public static String figureDescription;
+
+    public static ArrayList<String[]> nsn = new ArrayList<>();
+
 }

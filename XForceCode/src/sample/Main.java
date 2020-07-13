@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
@@ -22,6 +24,10 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.text.PDFTextStripper;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 public class Main extends Application {
 
@@ -35,6 +41,50 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws IOException {
+        String dummyPartNumber = Integer.toString(12345);
+        Document doc = Jsoup.connect("https://www.nsncenter.com/NSNSearch?q=" + dummyPartNumber).get();
+        /*
+        Elements links = doc.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
+        for (Element link : links) {
+            System.out.println("1");
+            System.out.println(link.text());
+        }
+         */
+
+        Elements rows = doc.select("tr");
+        for (Element row : rows ) {
+            String[] entry = new String[3];
+            Elements nsns = row.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
+            Elements cages = row.select("a[href^='https://www.cagecode.info/']");
+            // code assumes we will only find one nsns and one cages per row
+            for (Element nsn : nsns) {
+                entry[0] = nsn.text();
+                Pattern descriptions = Pattern.compile(",'name':'(.*?)','category':'");
+                Matcher matcher = descriptions.matcher(nsn.attr("onclick"));
+                while (matcher.find()) {
+                    entry[1] = matcher.group(1);
+                }
+            }
+            String cageStrings = "";
+            for (Element cage : cages) {
+                cageStrings += " " + cage.text();
+            }
+            entry[2] = cageStrings;
+            if (entry[0] != null) {
+                ParsedInfo.nsn.add(entry);
+            }
+        }
+
+        /*
+        //Testing nsn scraper
+        for (int i = 0; i<ParsedInfo.nsn.size(); i++){
+            for(int j = 0; j<ParsedInfo.nsn.get(i).length; j++){
+                System.out.print(ParsedInfo.nsn.get(i)[j]+ "         ");
+            }
+            System.out.println();
+        }
+        */
+
 
         File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
@@ -161,12 +211,15 @@ First entry will always be the figure number.
         }
 
 
-/*        for (int i = 0; i<ParsedInfo.parts.size(); i++){
+        /*
+        //Testing TO Parser
+        for (int i = 0; i<ParsedInfo.parts.size(); i++){
             for(int j = 0; j<7; j++){
                 System.out.print(ParsedInfo.parts.get(i)[j]+ "         ");
             }
             System.out.println();
-        }*/
+        }
+        */
 
 //
 //        for every entry in ypos - the last entry = y:
