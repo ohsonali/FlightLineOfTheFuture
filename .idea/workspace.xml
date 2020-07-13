@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e124754a-620d-459d-b33f-0846ac8c8ec9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/XForceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/XForceCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/nsn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/nsn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/confirmController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/confirmController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592864563720" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../XForce/XForce/jsoup-1.13.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -109,34 +117,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593050409069" />
-    <state x="592" y="416" key="DetectedRootsChooserDialog" timestamp="1593050345649">
+    <state x="592" y="416" key="DetectedRootsChooserDialog" timestamp="1594671752931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="592" y="416" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593050345649" />
+    <state x="592" y="416" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594671752931" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1593632018343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593632018343" />
-    <state x="459" y="348" key="FileChooserDialogImpl" timestamp="1594665349752">
+    <state x="459" y="348" key="FileChooserDialogImpl" timestamp="1594671767220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594665349752" />
-    <state width="1109" height="386" key="GridCell.Tab.0.bottom" timestamp="1594670801693">
+    <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594671767220" />
+    <state width="1877" height="386" key="GridCell.Tab.0.bottom" timestamp="1594672013087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1109" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594670801693" />
-    <state width="1109" height="386" key="GridCell.Tab.0.center" timestamp="1594670801693">
+    <state width="1877" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594672013087" />
+    <state width="1877" height="386" key="GridCell.Tab.0.center" timestamp="1594672013086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1109" height="386" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594670801693" />
-    <state width="1109" height="386" key="GridCell.Tab.0.left" timestamp="1594670801693">
+    <state width="1877" height="386" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594672013086" />
+    <state width="1877" height="386" key="GridCell.Tab.0.left" timestamp="1594672013086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1109" height="386" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594670801693" />
-    <state width="1109" height="386" key="GridCell.Tab.0.right" timestamp="1594670801693">
+    <state width="1877" height="386" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594672013086" />
+    <state width="1877" height="386" key="GridCell.Tab.0.right" timestamp="1594672013087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1109" height="386" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594670801693" />
+    <state width="1877" height="386" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594672013087" />
     <state width="859" height="196" key="GridCell.Tab.1.bottom" timestamp="1593566636288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -153,14 +161,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="859" height="196" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593566636288" />
-    <state x="346" y="278" key="MultipleFileMergeDialog" timestamp="1594318558446">
+    <state x="346" y="278" key="MultipleFileMergeDialog" timestamp="1594671726430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="346" y="278" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594318558446" />
-    <state x="46" y="85" key="SettingsEditor" timestamp="1594665353512">
+    <state x="346" y="278" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594671726430" />
+    <state x="46" y="85" key="SettingsEditor" timestamp="1594671774182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="46" y="85" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594665353512" />
+    <state x="46" y="85" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594671774182" />
     <state x="121" y="205" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592957251028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,10 +177,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="288" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593559729882" />
-    <state x="681" y="308" key="git4idea.merge.GitPullDialog" timestamp="1594318535315">
+    <state x="681" y="308" key="git4idea.merge.GitPullDialog" timestamp="1594671682678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="681" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594318535315" />
+    <state x="681" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594671682678" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
