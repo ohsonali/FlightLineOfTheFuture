@@ -41,7 +41,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws IOException {
-        String dummyPartNumber = Integer.toString(12345);
+        String dummyPartNumber = "5D0210-212";
         Document doc = Jsoup.connect("https://www.nsncenter.com/NSNSearch?q=" + dummyPartNumber).get();
         /*
         Elements links = doc.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
@@ -83,8 +83,8 @@ public class Main extends Application {
             }
             System.out.println();
         }
+        System.exit(0);
         */
-
 
         File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
