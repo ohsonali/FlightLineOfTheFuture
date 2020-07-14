@@ -26,6 +26,10 @@ public class nsnController implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
+        partNumber.setText(Part.getCurrentPart().getPart());
+        partDescription.setText(Part.getCurrentPart().getDescription());
+        cage.setText(Part.getCurrentPart().getCage());
+
 
         TableColumn nsnColumn = new TableColumn("NSN");
         TableColumn descriptionColumn = new TableColumn("Description");

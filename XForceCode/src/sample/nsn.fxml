@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="669.0" stylesheets="/sample/sample.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.nsnController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="669.0" stylesheets="/sample/sample.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.nsnController">
     <children>
       <TableView fx:id="tableView" layoutX="-1.0" layoutY="35.0" prefHeight="500.0" prefWidth="668.0" />
       <Text fx:id="partNumber" layoutX="4.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="145.65265655517578" />
-      <Text fx:id="description" layoutX="228.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fx:id="cageNumber" layoutX="521.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="partDescription" layoutX="228.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="cage" layoutX="521.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
    </children>
 </AnchorPane>
