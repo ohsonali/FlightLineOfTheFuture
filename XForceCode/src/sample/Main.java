@@ -10,10 +10,10 @@ import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.io.*;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -91,6 +91,7 @@ First entry will always be the figure number.
 
         PDFTextStripperByArea pdfStripperArea = new PDFTextStripperByArea();
         PDFLeanFinder leanFinder = new PDFLeanFinder();
+        PDPage page = document.getPage(2);
         pdfStripperArea.setSortByPosition(true);
         leanFinder.setSortByPosition(true);
         leanFinder.setStartPage(3);
@@ -135,14 +136,20 @@ First entry will always be the figure number.
                 Rectangle rectangle = new Rectangle(currentColumn,leanFinder.yPos.get(i), xPos.get(j), height);
                 //PDFTextStripperByArea pdf = new PDFTextStripperByArea();
                 pdfStripperArea.addRegion(name, rectangle);
-                PDPage page = document.getPage(2);
                 pdfStripperArea.extractRegions(page);
                 currentRow[j]= pdfStripperArea.getTextForRegion(name);
                 //System.out.println(pdf.getTextForRegion(name));
                 currentColumn += xPos.get(j);
+                pdfStripperArea.removeRegion(name);
             }
         }
 
+        Rectangle headerRect = new Rectangle(0, 0, Utils.pageWidth, Utils.startHeight);
+        pdfStripperArea.addRegion("header", headerRect);
+        pdfStripperArea.extractRegions(page);
+        ParsedInfo.technicalOrder = pdfStripperArea.getTextForRegion("header").replaceAll("TO", "").trim();
+        String[] split = ParsedInfo.technicalOrder.split("-");
+        ParsedInfo.volume = split[split.length - 1];
 
 
         for (int i = 0; i <ParsedInfo.parts.size(); i++) {
@@ -216,10 +223,74 @@ First entry will always be the figure number.
 
             try {
                 PDAcroForm pDAcroForm = document2.getDocumentCatalog().getAcroForm();
+                //Part
                 PDField field = pDAcroForm.getField("JCN");
-                field.setValue(Part.getJCN());
+                field.setValue(Part.getJCN().trim());
                 field = pDAcroForm.getField("Quantity");
-                field.setValue(Part.getQuantity());
+                field.setValue(Part.getQuantity().trim());
+                field = pDAcroForm.getField("Stock");
+                field.setValue(Part.getCurrentNSN().getNsn().trim());
+
+                //ParsedInfo
+                field = pDAcroForm.getField("Fig");
+                field.setValue(ParsedInfo.figureNumber.trim());
+                field = pDAcroForm.getField("Vol");
+                field.setValue(ParsedInfo.volume.trim());
+                field = pDAcroForm.getField("TO");
+                field.setValue(ParsedInfo.technicalOrder.trim());
+
+                //PartInfo
+                field = pDAcroForm.getField("Index");
+                field.setValue(Part.getCurrentPart().getFigure().replaceAll("-", "").trim());
+                field = pDAcroForm.getField("Part");
+                field.setValue(Part.getCurrentPart().getPart().trim());
+                field = pDAcroForm.getField("Nomenclature");
+                field.setValue(Part.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
+
+                //Default
+                field = pDAcroForm.getField("AccessKey");
+                field.setValue("12*");
+                field = pDAcroForm.getField("Doc");
+                field.setValue("A123BC01554001*");
+                field = pDAcroForm.getField("WUC");
+                field.setValue("1234AA567*");
+                field = pDAcroForm.getField("SerID");
+                field.setValue("ASK EVAN*");
+                field = pDAcroForm.getField("Org");
+                field.setValue("123BC*");
+
+                field = pDAcroForm.getField("CreateDate");
+                GregorianCalendar now = new GregorianCalendar();
+                now.setTimeInMillis(System.currentTimeMillis());
+                String date = String.format("%1$tb %1$te %1$tY", now);
+                field.setValue(date);
+
+                field = pDAcroForm.getField("Emp");
+                field.setValue("12345*");
+                field = pDAcroForm.getField("Shop");
+                field.setValue("ASK EVAN*");
+                field = pDAcroForm.getField("Base");
+                field.setValue("Travis AFB*");
+                field = pDAcroForm.getField("SRAN");
+                field.setValue("AB1234*");
+                field = pDAcroForm.getField("Priority");
+                field.setValue("ASK EVAN*");
+                field = pDAcroForm.getField("Dest");
+                field.setValue("ASK EVAN*");
+                field = pDAcroForm.getField("Requester");
+                field.setValue("Bernard*");
+                field = pDAcroForm.getField("Verify");
+                field.setValue("Sonali*");
+                field = pDAcroForm.getField("Remarks");
+                field.setValue("NSIN X-Force*");
+                field = pDAcroForm.getField("DIFM");
+                field.setValue("ASK EVAN*");
+                field = pDAcroForm.getField("Date");
+                field.setValue(date);
+                String time = String.format("%1$tH %1$tM", now);
+                field = pDAcroForm.getField("NeedTime");
+                field.setValue(time);
+
                 document2.save(file2.getPath());
             } catch (IOException e) {
                 e.printStackTrace();

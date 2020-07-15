@@ -109,6 +109,7 @@ public class nsnController implements Initializable {
     }
 
     public void openUserWindow(NSN nsn, ActionEvent e) throws Exception {
+        Part.addNSN(nsn);
         Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
