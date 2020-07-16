@@ -22,8 +22,8 @@ public class PDFLeanFinder extends PDFTextStripperByArea {
     protected void processTextPosition(TextPosition pos) {
         super.processTextPosition(pos);
         if (first) {
-            System.out.println("First Y: " + pos.getY());
-            System.out.println("First X: " + pos.getX());
+            //System.out.println("First Y: " + pos.getY());
+            //System.out.println("First X: " + pos.getX());
             if (pos.getX() > Utils.firstLeft - 2 && pos.getX() < Utils.firstLeft + 2) {
                 left = true;
                 x = 0;
