@@ -25,12 +25,14 @@ public class nsnController implements Initializable {
     TableView<NSN> tableView;
     @FXML
     Text partNumber, partDescription, cage;
+    @FXML
+    Button cancel;
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
-        partNumber.setText(Part.getCurrentPart().getPart());
-        partDescription.setText(Part.getCurrentPart().getDescription());
-        cage.setText(Part.getCurrentPart().getCage());
+        partNumber.setText("Part Number: " + Part.getCurrentPart().getPart().trim());
+        partDescription.setText("Description: " + Part.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
+        cage.setText("Cage: " + Part.getCurrentPart().getCage());
 
 
         TableColumn nsnColumn = new TableColumn("NSN");
@@ -158,5 +160,16 @@ public class nsnController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void cancel (ActionEvent e) throws Exception {
+        Part.removePart();
+        ParsedInfo.clearNSNList();
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Scene scene = new Scene(root);
+        Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+
     }
 }
