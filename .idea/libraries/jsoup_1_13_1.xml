@@ -1,19 +1,9 @@
 <component name="libraryTable">
   <library name="jsoup-1.13.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/jsoup-1.13.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/fontbox-2.0.20.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/pdfbox-2.0.20.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/pdfbox-app-2.0.20.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/pdfbox-tools-2.0.20.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/preflight-2.0.20.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/preflight-app-2.0.20.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../XForce/XForce/xmpbox-2.0.20.jar!/" />
-      <root url="file://$PROJECT_DIR$/../XForce" />
+      <root url="jar://$PROJECT_DIR$/../../jsoup-1.13.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/../XForce/XForce/src" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

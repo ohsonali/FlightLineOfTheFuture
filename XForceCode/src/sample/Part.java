@@ -5,6 +5,12 @@ public class Part {
     private static String JCN = null;
     private static String Quantity = null;
 
+    private static NSN currentNSN = null;
+
+    public static void addNSN(NSN nsn) {
+        currentNSN = nsn;
+    }
+
     public static void addPart(PartInfo part) {
         currentPart = part;
     }
@@ -19,6 +25,8 @@ public class Part {
         JCN = null;
         Quantity = null;
     }
+
+    public static NSN getCurrentNSN() {return currentNSN;}
 
     public static PartInfo getCurrentPart() {
         return currentPart;

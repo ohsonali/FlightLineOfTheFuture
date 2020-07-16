@@ -26,6 +26,10 @@ public class nsnController implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
+        partNumber.setText(Part.getCurrentPart().getPart());
+        partDescription.setText(Part.getCurrentPart().getDescription());
+        cage.setText(Part.getCurrentPart().getCage());
+
 
         TableColumn nsnColumn = new TableColumn("NSN");
         TableColumn descriptionColumn = new TableColumn("Description");
@@ -105,6 +109,7 @@ public class nsnController implements Initializable {
     }
 
     public void openUserWindow(NSN nsn, ActionEvent e) throws Exception {
+        Part.addNSN(nsn);
         Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
