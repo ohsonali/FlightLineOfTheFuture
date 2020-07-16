@@ -157,7 +157,20 @@ public class Controller implements Initializable {
                 Pattern descriptions = Pattern.compile(",'name':'(.*?)','category':'");
                 Matcher matcher = descriptions.matcher(nsn.attr("onclick"));
                 while (matcher.find()) {
-                    entry[1] = matcher.group(1);
+                    String rawDescription = matcher.group(1);
+                    String[] descList = rawDescription.split("(?=[,| ])");
+                    String description = "";
+                    int counter = 0;
+                    for (String desc : descList) {
+                        if (counter == 3) {
+                           description += "\n" + desc;
+                           counter = 1;
+                        } else {
+                            counter += 1;
+                            description += desc;
+                        }
+                    }
+                    entry[1] = description;
                 }
             }
             String cageStrings = "";
