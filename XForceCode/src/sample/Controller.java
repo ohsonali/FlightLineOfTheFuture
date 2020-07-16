@@ -38,6 +38,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -178,7 +179,7 @@ public class Controller implements Initializable {
 
         if (ParsedInfo.nsn.size() == 1 ){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
-                    "Confirm Matching NSN " + ParsedInfo.nsn.get(0)[0] + " ?", ButtonType.YES, ButtonType.CANCEL);
+                    "We only found one possible NSN on NSNCenter.com. Confirm " + ParsedInfo.nsn.get(0)[0] + " ?", ButtonType.YES, ButtonType.CANCEL);
 
             alert.showAndWait();
 
@@ -188,12 +189,26 @@ public class Controller implements Initializable {
                 String cage = ParsedInfo.nsn.get(0)[2];
                 Part.addNSN(new NSN (nsn, description, cage));
                 openUserWindow(e);
-            }
-            else {
+            } else {
                 Part.removePart();
+                ParsedInfo.clearNSNList();
             }
-        }
-        else {
+        } else if (ParsedInfo.nsn.size() == 0) {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                    "We found zero possible NSNs on NSNCenter.com. Would you still like to proceed?", ButtonType.YES, ButtonType.NO);
+            alert.showAndWait();
+
+            if (alert.getResult() == ButtonType.YES) {
+                String nsn = "";
+                String description = "";
+                String cage = "";
+                Part.addNSN(new NSN (nsn, description, cage));
+                openUserWindow(e);
+            } else {
+                Part.removePart();
+                ParsedInfo.clearNSNList();
+            }
+        } else {
             openNSNWindow(e);
         }
     }

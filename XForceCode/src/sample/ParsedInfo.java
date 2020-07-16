@@ -12,4 +12,7 @@ public class ParsedInfo {
 
     public static ArrayList<String[]> nsn = new ArrayList<>();
 
+    public static void clearNSNList() {
+        nsn = new ArrayList<>();
+    }
 }
