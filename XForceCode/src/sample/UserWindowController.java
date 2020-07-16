@@ -37,6 +37,8 @@ public class UserWindowController {
     }
 
     public void cancel (ActionEvent e) throws Exception{
+        Part.removePart();
+        ParsedInfo.clearNSNList();
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();

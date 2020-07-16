@@ -54,10 +54,10 @@ public class Main extends Application {
         */
 
 
-        File file = new File(Utils.sonaliFile);
+        File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(Utils.sonali9006File);
+        File file2 = new File(Utils.bernard9006File);
         PDDocument document2 = PDDocument.load(file2);
         
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();

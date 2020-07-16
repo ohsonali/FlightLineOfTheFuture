@@ -24,6 +24,7 @@ public class Part {
         currentPart = null;
         JCN = null;
         Quantity = null;
+        currentNSN = null;
     }
 
     public static NSN getCurrentNSN() {return currentNSN;}
