@@ -15,6 +15,7 @@ public class Utils {
     static int startHeight = 86;
     static int tableHeight = 630;
     static int pageWidth = 611;
+    static int headerHeight = 44;
 
     static String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
     static String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33 (2).pdf";

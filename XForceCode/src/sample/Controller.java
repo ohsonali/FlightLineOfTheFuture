@@ -74,19 +74,6 @@ public class Controller implements Initializable {
         TableColumn smrColumn = new TableColumn("SMR Code");
         TableColumn<PartInfo, Void> colBtn = new TableColumn("Button Column");
 
-        tableView.setRowFactory(tv -> {
-            TableRow<PartInfo> row = new TableRow<>();
-            row.setOnMouseEntered(event -> {
-                if (! row.isEmpty()) {
-                    //&& event.getButton()== MouseButton.PRIMARY && event.getClickCount() == 2
-
-                    PartInfo clickedRow = row.getItem();
-                    //printRow(clickedRow);
-                    System.out.println("green");
-                }
-            });
-            return row ;
-        });
 
         Callback<TableColumn<PartInfo, Void>, TableCell<PartInfo, Void>> cellFactory = new Callback<TableColumn<PartInfo, Void>, TableCell<PartInfo, Void>>() {
             @Override
@@ -188,12 +175,40 @@ public class Controller implements Initializable {
                 ParsedInfo.nsn.add(entry);
             }
         }
-        openNSNWindow(e);
+
+        if (ParsedInfo.nsn.size() == 1 ){
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                    "Confirm Matching NSN " + ParsedInfo.nsn.get(0)[0] + " ?", ButtonType.YES, ButtonType.CANCEL);
+
+            alert.showAndWait();
+
+            if (alert.getResult() == ButtonType.YES) {
+                String nsn = ParsedInfo.nsn.get(0)[0];
+                String description = ParsedInfo.nsn.get(0)[1];
+                String cage = ParsedInfo.nsn.get(0)[2];
+                Part.addNSN(new NSN (nsn, description, cage));
+                openUserWindow(e);
+            }
+            else {
+                Part.removePart();
+            }
+        }
+        else {
+            openNSNWindow(e);
+        }
     }
 
 
     public void openNSNWindow (ActionEvent e) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("nsn.fxml"));
+        Scene scene = new Scene(root);
+        Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+
+    public void openUserWindow (ActionEvent e) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);

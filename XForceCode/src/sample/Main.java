@@ -54,10 +54,10 @@ public class Main extends Application {
         */
 
 
-        File file = new File(Utils.bernardFile);
+        File file = new File(Utils.sonaliFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(Utils.bernard9006File);
+        File file2 = new File(Utils.sonali9006File);
         PDDocument document2 = PDDocument.load(file2);
         
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
@@ -144,7 +144,7 @@ First entry will always be the figure number.
             }
         }
 
-        Rectangle headerRect = new Rectangle(0, 0, Utils.pageWidth, Utils.startHeight);
+        Rectangle headerRect = new Rectangle(0, 0, Utils.pageWidth, Utils.headerHeight);
         pdfStripperArea.addRegion("header", headerRect);
         pdfStripperArea.extractRegions(page);
         ParsedInfo.technicalOrder = pdfStripperArea.getTextForRegion("header").replaceAll("TO", "").trim();
