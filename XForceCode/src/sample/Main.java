@@ -223,6 +223,13 @@ First entry will always be the figure number.
 
             try {
                 PDAcroForm pDAcroForm = document2.getDocumentCatalog().getAcroForm();
+
+                for (PDField field : pDAcroForm.getFields()) {
+                    if (field.getFieldType().equals("Tx")) {
+                        field.setValue("");
+                    }
+                }
+
                 //Part
                 PDField field = pDAcroForm.getField("JCN");
                 field.setValue(Part.getJCN().trim());
@@ -249,15 +256,15 @@ First entry will always be the figure number.
 
                 //Default
                 field = pDAcroForm.getField("AccessKey");
-                field.setValue("12*");
+                field.setValue("*12");
                 field = pDAcroForm.getField("Doc");
-                field.setValue("A123BC01554001*");
+                field.setValue("*A123BC01554001");
                 field = pDAcroForm.getField("WUC");
-                field.setValue("1234AA567*");
+                field.setValue("*1234AA567");
                 field = pDAcroForm.getField("SerID");
-                field.setValue("ASK EVAN*");
+                field.setValue("*12345678");
                 field = pDAcroForm.getField("Org");
-                field.setValue("123BC*");
+                field.setValue("*123BC");
 
                 field = pDAcroForm.getField("CreateDate");
                 GregorianCalendar now = new GregorianCalendar();
@@ -266,25 +273,23 @@ First entry will always be the figure number.
                 field.setValue(date);
 
                 field = pDAcroForm.getField("Emp");
-                field.setValue("12345*");
+                field.setValue("*12345");
                 field = pDAcroForm.getField("Shop");
-                field.setValue("ASK EVAN*");
+                field.setValue("*A1BCD");
                 field = pDAcroForm.getField("Base");
-                field.setValue("Travis AFB*");
+                field.setValue("*ABCD");
                 field = pDAcroForm.getField("SRAN");
-                field.setValue("AB1234*");
+                field.setValue("*AB1234");
                 field = pDAcroForm.getField("Priority");
-                field.setValue("ASK EVAN*");
+                field.setValue("*04");
                 field = pDAcroForm.getField("Dest");
-                field.setValue("ASK EVAN*");
+                field.setValue("*ABC");
                 field = pDAcroForm.getField("Requester");
-                field.setValue("Bernard*");
+                field.setValue("*Bernard");
                 field = pDAcroForm.getField("Verify");
-                field.setValue("Sonali*");
+                field.setValue("*Sonali");
                 field = pDAcroForm.getField("Remarks");
-                field.setValue("NSIN X-Force*");
-                field = pDAcroForm.getField("DIFM");
-                field.setValue("ASK EVAN*");
+                field.setValue("*NSIN X-Force");
                 field = pDAcroForm.getField("Date");
                 field.setValue(date);
                 String time = String.format("%1$tH %1$tM", now);
