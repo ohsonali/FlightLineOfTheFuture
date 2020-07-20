@@ -91,11 +91,11 @@ First entry will always be the figure number.
 
         PDFTextStripperByArea pdfStripperArea = new PDFTextStripperByArea();
         PDFLeanFinder leanFinder = new PDFLeanFinder();
-        PDPage page = document.getPage(3);
+        PDPage page = document.getPage(2);
         pdfStripperArea.setSortByPosition(true);
         leanFinder.setSortByPosition(true);
-        leanFinder.setStartPage(4);
-        leanFinder.setEndPage(5);
+        leanFinder.setStartPage(3);
+        leanFinder.setEndPage(4);
         leanFinder.getText(document);
         // System.out.println(leanFinder.left);
 
