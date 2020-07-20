@@ -42,7 +42,6 @@ public class Main extends Application {
 
     public static void main(String[] args) throws IOException {
 
-
         /*
         //Testing nsn scraper
         for (int i = 0; i<ParsedInfo.nsn.size(); i++){
@@ -52,14 +51,23 @@ public class Main extends Application {
             System.out.println();
         }
         */
-
+        File csv = new File(Utils.bernardcsv);
 
         File file = new File(Utils.bernardFile);
         PDDocument document = PDDocument.load(file);
 
         File file2 = new File(Utils.bernard9006File);
         PDDocument document2 = PDDocument.load(file2);
-        
+
+        BufferedReader csvReader = new BufferedReader(new FileReader(csv));
+        String row;
+        while ((row = csvReader.readLine()) != null) {
+            String[] data = row.split(",");
+            if (Part.getCurrentNSN().getNsn().replaceAll("-", "").trim().equals(data[1])) {
+                System.out.println(data[10]);
+            }
+        }
+
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);
         //pdfStripper.setEndPage(4);
