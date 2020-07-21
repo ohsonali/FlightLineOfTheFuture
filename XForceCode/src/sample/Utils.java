@@ -20,7 +20,9 @@ public class Utils {
     static String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
     static String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33 (2).pdf";
     static String bernard9006File = "C:/Users/berna_000/Desktop/my9006.pdf";
+    static String bernardcsv = "C:/Users/berna_000/Desktop/Mock Warehouse.csv";
     static String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33 (2).pdf";
     static String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
     static String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";
+    static String sonalicsv = "/Users/ohsonali/Documents/X-Force/Mock Warehouse.csv";
 }

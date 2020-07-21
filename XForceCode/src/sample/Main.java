@@ -42,7 +42,6 @@ public class Main extends Application {
 
     public static void main(String[] args) throws IOException {
 
-
         /*
         //Testing nsn scraper
         for (int i = 0; i<ParsedInfo.nsn.size(); i++){
@@ -53,13 +52,14 @@ public class Main extends Application {
         }
         */
 
-
-        File file = new File(Utils.bernardFile);
+        File file = new File(Utils.sonaliFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(Utils.bernard9006File);
+        File file2 = new File(Utils.sonali9006File);
         PDDocument document2 = PDDocument.load(file2);
-        
+
+
+
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);
         //pdfStripper.setEndPage(4);
@@ -91,11 +91,11 @@ First entry will always be the figure number.
 
         PDFTextStripperByArea pdfStripperArea = new PDFTextStripperByArea();
         PDFLeanFinder leanFinder = new PDFLeanFinder();
-        PDPage page = document.getPage(3);
+        PDPage page = document.getPage(2);
         pdfStripperArea.setSortByPosition(true);
         leanFinder.setSortByPosition(true);
-        leanFinder.setStartPage(4);
-        leanFinder.setEndPage(5);
+        leanFinder.setStartPage(3);
+        leanFinder.setEndPage(4);
         leanFinder.getText(document);
         // System.out.println(leanFinder.left);
 
@@ -153,7 +153,7 @@ First entry will always be the figure number.
         String[] split = ParsedInfo.technicalOrder.split("-");
         ParsedInfo.volume = split[split.length - 1];
 
-
+//remove any empty lines in the table
         for (int i = 0; i <ParsedInfo.parts.size(); i++) {
             String figure = ParsedInfo.parts.get(i)[0];
             String partNumber = ParsedInfo.parts.get(i)[1];

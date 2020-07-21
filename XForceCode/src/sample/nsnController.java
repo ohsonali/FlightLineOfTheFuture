@@ -170,6 +170,5 @@ public class nsnController implements Initializable {
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
-
     }
 }
