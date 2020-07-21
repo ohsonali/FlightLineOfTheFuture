@@ -131,7 +131,7 @@ public class Controller implements Initializable {
             String figure = ParsedInfo.parts.get(i)[0];
             String partNumber = ParsedInfo.parts.get(i)[1];
             String cage = ParsedInfo.parts.get(i)[2];
-            String description = ParsedInfo.parts.get(i)[3];
+            String description = ParsedInfo.parts.get(i)[3].replaceAll("\\.", "").trim();
             String units = ParsedInfo.parts.get(i)[4];
             String usable = ParsedInfo.parts.get(i)[5];
             String smr = ParsedInfo.parts.get(i)[6];

@@ -51,26 +51,14 @@ public class Main extends Application {
             System.out.println();
         }
         */
-        File csv = new File(Utils.bernardcsv);
 
-        File file = new File(Utils.bernardFile);
+        File file = new File(Utils.sonaliFile);
         PDDocument document = PDDocument.load(file);
 
-        File file2 = new File(Utils.bernard9006File);
+        File file2 = new File(Utils.sonali9006File);
         PDDocument document2 = PDDocument.load(file2);
 
-        BufferedReader csvReader = new BufferedReader(new FileReader(csv));
-        String row;
-        while ((row = csvReader.readLine()) != null) {
-            String[] data = row.split(",");
-            if ("4730015544191".replaceAll("-", "").trim().equals(data[1])) {
-                for (int i = 0; i < 13; i++) {
-                    System.out.println(data[i]);
-                }
-            }
-        }
 
-        System.exit(0);
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);
@@ -165,7 +153,7 @@ First entry will always be the figure number.
         String[] split = ParsedInfo.technicalOrder.split("-");
         ParsedInfo.volume = split[split.length - 1];
 
-
+//remove any empty lines in the table
         for (int i = 0; i <ParsedInfo.parts.size(); i++) {
             String figure = ParsedInfo.parts.get(i)[0];
             String partNumber = ParsedInfo.parts.get(i)[1];

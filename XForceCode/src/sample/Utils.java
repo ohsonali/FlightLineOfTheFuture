@@ -24,4 +24,5 @@ public class Utils {
     static String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33 (2).pdf";
     static String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
     static String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";
+    static String sonalicsv = "/Users/ohsonali/Documents/X-Force/Mock Warehouse.csv";
 }
