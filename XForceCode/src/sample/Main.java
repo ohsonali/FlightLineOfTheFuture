@@ -63,10 +63,14 @@ public class Main extends Application {
         String row;
         while ((row = csvReader.readLine()) != null) {
             String[] data = row.split(",");
-            if (Part.getCurrentNSN().getNsn().replaceAll("-", "").trim().equals(data[1])) {
-                System.out.println(data[10]);
+            if ("4730015544191".replaceAll("-", "").trim().equals(data[1])) {
+                for (int i = 0; i < 13; i++) {
+                    System.out.println(data[i]);
+                }
             }
         }
+
+        System.exit(0);
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);

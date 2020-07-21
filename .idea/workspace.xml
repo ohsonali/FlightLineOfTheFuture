@@ -22,7 +22,6 @@
     <list default="true" id="e124754a-620d-459d-b33f-0846ac8c8ec9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,10 +104,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594766539402">
+    <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595285742452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594766539402" />
+    <state x="249" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595285742452" />
     <state x="592" y="416" key="DetectedRootsChooserDialog" timestamp="1594671752931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -121,22 +120,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594943487342" />
-    <state width="914" height="280" key="GridCell.Tab.0.bottom" timestamp="1595013874123">
+    <state width="914" height="280" key="GridCell.Tab.0.bottom" timestamp="1595291087257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595013874123" />
-    <state width="914" height="280" key="GridCell.Tab.0.center" timestamp="1595013874123">
+    <state width="914" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595291087257" />
+    <state width="914" height="280" key="GridCell.Tab.0.center" timestamp="1595291087257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595013874123" />
-    <state width="914" height="280" key="GridCell.Tab.0.left" timestamp="1595013874123">
+    <state width="914" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595291087257" />
+    <state width="914" height="280" key="GridCell.Tab.0.left" timestamp="1595291087256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595013874123" />
-    <state width="914" height="280" key="GridCell.Tab.0.right" timestamp="1595013874123">
+    <state width="914" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595291087256" />
+    <state width="914" height="280" key="GridCell.Tab.0.right" timestamp="1595291087257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595013874123" />
+    <state width="914" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595291087257" />
     <state width="868" height="195" key="GridCell.Tab.1.bottom" timestamp="1594769761838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
