@@ -41,7 +41,6 @@ public class Main extends Application {
 
 
     public static void main(String[] args) throws IOException {
-
         /*
         //Testing nsn scraper
         for (int i = 0; i<ParsedInfo.nsn.size(); i++){
@@ -51,14 +50,11 @@ public class Main extends Application {
             System.out.println();
         }
         */
+        TOParser readTO = new TOParser(true, 3);
+        readTO.parse();
 
-        File file = new File(Utils.sonaliFile);
-        PDDocument document = PDDocument.load(file);
-
-        File file2 = new File(Utils.sonali9006File);
+        File file2 = new File(Utils.bernard9006File);
         PDDocument document2 = PDDocument.load(file2);
-
-
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);
@@ -71,8 +67,7 @@ public class Main extends Application {
 2. Find out whether the page is right or left leaning by looking at the x-coordinate
    of the first character on the page (which should be F in Figure)
 3. Look at the Figure and Index No. rectangle. Put all the y-coordinate positions of the top of the
-   character into an array (ypos) -> put in new class. Put all the figure and index numbers into an
-   ArrayList of String[7] Arrays.
+   character into an array (ypos) -> p
 4. Calculate rectangle dimensions (next y-coordinate position - current y-coordinate position).
    First one could be the first line under figure and index no. Note: make sure to grab
    the top of the letter, might be very sensitive.
@@ -85,23 +80,9 @@ character has the same x-coordinate as the rest of the same type.
 The height of the table is always the same, and the table always starts at the same pixel height.
 The width of the columns are always the same.
 First entry will always be the figure number.
-
+ut in new class. Put all the figure and index numbers into an
+   ArrayList of String[7] Arrays.
 */
-
-
-        PDFTextStripperByArea pdfStripperArea = new PDFTextStripperByArea();
-        PDFLeanFinder leanFinder = new PDFLeanFinder();
-        PDPage page = document.getPage(2);
-        pdfStripperArea.setSortByPosition(true);
-        leanFinder.setSortByPosition(true);
-        leanFinder.setStartPage(3);
-        leanFinder.setEndPage(4);
-        leanFinder.getText(document);
-        // System.out.println(leanFinder.left);
-
-        Collections.sort(leanFinder.yPos);
-
-        leanFinder.yPos.add(Utils.startHeight+Utils.tableHeight);
 
     /*
     for (int i = 0; i < leanFinder.yPos.size(); i ++) {
@@ -117,76 +98,6 @@ First entry will always be the figure number.
 //        pdfStripperArea.extractRegions(docPage);
 //        String regionText = pdfStripperArea.getTextForRegion("Figure and Index");
 //        System.out.println(regionText);
-
-        ArrayList<Integer> xPos = new ArrayList<>();
-        xPos.add(Utils.figureWidth);
-        xPos.add(Utils.partWidth);
-        xPos.add(Utils.cageWidth);
-        xPos.add(Utils.descWidth);
-        xPos.add(Utils.unitWidth);
-        xPos.add(Utils.usableWidth);
-        xPos.add(Utils.smrWidth);
-
-        for (int i = 0; i < leanFinder.yPos.size()-1; i++) {
-            int height = leanFinder.yPos.get(i+1)-leanFinder.yPos.get(i);
-            int currentColumn = Utils.leftStart + leanFinder.x;
-            String[] currentRow = new String[xPos.size()];
-            ParsedInfo.parts.add(currentRow);
-
-            for (int j = 0; j<xPos.size(); j++){
-                String name = Integer.toString(i) + Integer.toString(j);
-                Rectangle rectangle = new Rectangle(currentColumn,leanFinder.yPos.get(i), xPos.get(j), height);
-                //PDFTextStripperByArea pdf = new PDFTextStripperByArea();
-                pdfStripperArea.addRegion(name, rectangle);
-                pdfStripperArea.extractRegions(page);
-                currentRow[j]= pdfStripperArea.getTextForRegion(name);
-                //System.out.println(pdf.getTextForRegion(name));
-                currentColumn += xPos.get(j);
-                pdfStripperArea.removeRegion(name);
-            }
-        }
-
-        Rectangle headerRect = new Rectangle(0, 0, Utils.pageWidth, Utils.headerHeight);
-        pdfStripperArea.addRegion("header", headerRect);
-        pdfStripperArea.extractRegions(page);
-        ParsedInfo.technicalOrder = pdfStripperArea.getTextForRegion("header").replaceAll("TO", "").trim();
-        String[] split = ParsedInfo.technicalOrder.split("-");
-        ParsedInfo.volume = split[split.length - 1];
-
-//remove any empty lines in the table
-        for (int i = 0; i <ParsedInfo.parts.size(); i++) {
-            String figure = ParsedInfo.parts.get(i)[0];
-            String partNumber = ParsedInfo.parts.get(i)[1];
-            String cage = ParsedInfo.parts.get(i)[2];
-            String description = ParsedInfo.parts.get(i)[3];
-            String units = ParsedInfo.parts.get(i)[4];
-            String usable = ParsedInfo.parts.get(i)[5];
-            String smr = ParsedInfo.parts.get(i)[6];
-            String[] partLines = stringLines(partNumber);
-            if (figure.trim().length() == 0 && partNumber.trim().length() == 0 && cage.trim().length() == 0 && description.trim().length() == 0 &&
-                    units.trim().length() == 0 && usable.trim().length() == 0 && smr.trim().length() == 0) {
-                ParsedInfo.parts.remove(i);
-            }
-
-            if (partLines.length > 1) {
-                String[] cageLines = stringLines(cage);
-                String[] smrLines = stringLines(smr);
-                for (int j = 0; j < partLines.length; j++) {
-                    String[] newRow = new String[xPos.size()];
-                    newRow[0] = figure;
-                    newRow[3] = description;
-                    newRow[4] = units;
-                    newRow[5] = usable;
-
-                    newRow[1] = partLines[j].replace(" 4", " =");
-                    newRow[2] = cageLines[j];
-                    newRow[6] = smrLines[j];
-                    ParsedInfo.parts.add(i + j + 1, newRow);
-                }
-                ParsedInfo.parts.remove(i);
-            }
-        }
-
 
         /*
         //Testing TO Parser
@@ -215,8 +126,6 @@ First entry will always be the figure number.
 
 
         //System.out.println(text);
-
-        document.close();
 
         launch(args);
 
@@ -310,10 +219,5 @@ First entry will always be the figure number.
             desktop.open(file2);*/
         }
     }
-
-    public static String[] stringLines(String str){
-        return str.split("\r\n|\r|\n");
-    }
-
 
 }

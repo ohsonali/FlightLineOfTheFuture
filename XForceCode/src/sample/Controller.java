@@ -58,6 +58,7 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
+        processParsedTO();
         ParsedInfo.figureNumber = ParsedInfo.parts.get(0)[0];
         if (ParsedInfo.parts.get(0)[3].trim().length() == 0) {
             ParsedInfo.figureDescription = "Not Available";
@@ -241,6 +242,45 @@ public class Controller implements Initializable {
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();
+    }
+
+    public void processParsedTO() {
+        for (int i = 0; i <ParsedInfo.parts.size(); i++) {
+            String figure = ParsedInfo.parts.get(i)[0];
+            String partNumber = ParsedInfo.parts.get(i)[1];
+            String cage = ParsedInfo.parts.get(i)[2];
+            String description = ParsedInfo.parts.get(i)[3];
+            String units = ParsedInfo.parts.get(i)[4];
+            String usable = ParsedInfo.parts.get(i)[5];
+            String smr = ParsedInfo.parts.get(i)[6];
+            String[] partLines = stringLines(partNumber);
+            if (figure.trim().length() == 0 && partNumber.trim().length() == 0 && cage.trim().length() == 0 && description.trim().length() == 0 &&
+                    units.trim().length() == 0 && usable.trim().length() == 0 && smr.trim().length() == 0) {
+                ParsedInfo.parts.remove(i);
+            }
+
+            if (partLines.length > 1) {
+                String[] cageLines = stringLines(cage);
+                String[] smrLines = stringLines(smr);
+                for (int j = 0; j < partLines.length; j++) {
+                    String[] newRow = new String[ParsedInfo.parts.get(i).length];
+                    newRow[0] = figure;
+                    newRow[3] = description;
+                    newRow[4] = units;
+                    newRow[5] = usable;
+
+                    newRow[1] = partLines[j].replace(" 4", " =");
+                    newRow[2] = cageLines[j];
+                    newRow[6] = smrLines[j];
+                    ParsedInfo.parts.add(i + j + 1, newRow);
+                }
+                ParsedInfo.parts.remove(i);
+            }
+        }
+    }
+
+    public static String[] stringLines(String str){
+        return str.split("\r\n|\r|\n");
     }
 
 }

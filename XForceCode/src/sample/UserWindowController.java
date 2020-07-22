@@ -32,13 +32,13 @@ public class UserWindowController implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
-        File csv = new File(Utils.sonalicsv);
+        File csv = new File(Utils.bernardcsv);
         try {
             BufferedReader csvReader = new BufferedReader(new FileReader(csv));
             String row;
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-                if ("5305000546652".replaceAll("-", "").trim().equals(data[1])) {
+                if (Part.getCurrentNSN().getNsn().replaceAll("-", "").trim().equals(data[1])) {
                     quantityInStock = data[9];
                 }
             }
