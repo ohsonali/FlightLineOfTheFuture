@@ -38,7 +38,7 @@ public class UserWindowController implements Initializable {
             String row;
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-                if (Part.getCurrentNSN().getNsn().replaceAll("-", "").trim().equals(data[1])) {
+                if (PartInfo.getCurrentNSN().getNsn().replaceAll("-", "").trim().equals(data[1])) {
                     quantityInStock = data[9];
                 }
             }
@@ -47,9 +47,9 @@ public class UserWindowController implements Initializable {
         catch (IOException io){
             io.printStackTrace();
         }
-        partNumber.setText("Part Number: " + Part.getCurrentPart().getPart());
-        nsn.setText("NSN: " + Part.getCurrentNSN().getNsn());
-        description.setText("Description: " + Part.getCurrentPart().getDescription());
+        partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum());
+        nsn.setText("NSN: " + PartInfo.getCurrentNSN().getNsn());
+        description.setText("Description: " + PartInfo.getCurrentPart().getDescription());
         stock.setText("Quantity in Stock: " + quantityInStock);
     }
 
@@ -57,12 +57,12 @@ public class UserWindowController implements Initializable {
         String JCN, Quantity;
         JCN = jcn.getText();
         Quantity = quantity.getText();
-        Part.addUserData(JCN, Quantity);
+        PartInfo.addUserData(JCN, Quantity);
 
         jcn.clear();
         quantity.clear();
-        System.out.println(Part.getJCN());
-        System.out.println(Part.getQuantity());
+        System.out.println(PartInfo.getJCN());
+        System.out.println(PartInfo.getQuantity());
 
         Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow() ;
         stage.close();
@@ -70,8 +70,8 @@ public class UserWindowController implements Initializable {
     }
 
     public void cancel (ActionEvent e) throws Exception{
-        Part.removePart();
-        ParsedInfo.clearNSNList();
+        PartInfo.removePart();
+        NSNScrape.clearNSNList();
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();

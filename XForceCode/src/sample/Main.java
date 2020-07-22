@@ -43,9 +43,9 @@ public class Main extends Application {
     public static void main(String[] args) throws IOException {
         /*
         //Testing nsn scraper
-        for (int i = 0; i<ParsedInfo.nsn.size(); i++){
-            for(int j = 0; j<ParsedInfo.nsn.get(i).length; j++){
-                System.out.print(ParsedInfo.nsn.get(i)[j]+ "         ");
+        for (int i = 0; i<NSNScrape.getScrapedNSNs().size(); i++){
+            for(int j = 0; j<NSNScrape.getScrapedNSNs().get(i).length; j++){
+                System.out.print(NSNScrape.getScrapedNSNs().get(i)[j]+ "         ");
             }
             System.out.println();
         }
@@ -73,7 +73,7 @@ public class Main extends Application {
    the top of the letter, might be very sensitive.
 5. For every row, find the column entries. [outer for loop is row, inner for loop is column].
    Look at every specific box and put that information into the array.
-6. Create PartInfo objects using information in the ArrayList of Arrays.
+6. Create Part objects using information in the ArrayList of Arrays.
 
 Base assumptions: Pages are either left or right leaning and for each respective type, the first
 character has the same x-coordinate as the rest of the same type.
@@ -101,9 +101,9 @@ ut in new class. Put all the figure and index numbers into an
 
         /*
         //Testing TO Parser
-        for (int i = 0; i<ParsedInfo.parts.size(); i++){
+        for (int i = 0; i<TOParser.parts.size(); i++){
             for(int j = 0; j<7; j++){
-                System.out.print(ParsedInfo.parts.get(i)[j]+ "         ");
+                System.out.print(TOParser.parts.get(i)[j]+ "         ");
             }
             System.out.println();
         }
@@ -130,7 +130,7 @@ ut in new class. Put all the figure and index numbers into an
         launch(args);
 
 
-        if (Part.getJCN() != null && Part.getQuantity() != null && Part.getCurrentPart() != null) {
+        if (PartInfo.getJCN() != null && PartInfo.getQuantity() != null && PartInfo.getCurrentPart() != null) {
 
             try {
                 PDAcroForm pDAcroForm = document2.getDocumentCatalog().getAcroForm();
@@ -143,27 +143,27 @@ ut in new class. Put all the figure and index numbers into an
 
                 //Part
                 PDField field = pDAcroForm.getField("JCN");
-                field.setValue(Part.getJCN().trim());
+                field.setValue(PartInfo.getJCN().trim());
                 field = pDAcroForm.getField("Quantity");
-                field.setValue(Part.getQuantity().trim());
+                field.setValue(PartInfo.getQuantity().trim());
                 field = pDAcroForm.getField("Stock");
-                field.setValue(Part.getCurrentNSN().getNsn().trim());
+                field.setValue(PartInfo.getCurrentNSN().getNsn().trim());
 
-                //ParsedInfo
+                //TOParser
                 field = pDAcroForm.getField("Fig");
-                field.setValue(ParsedInfo.figureNumber.trim());
+                field.setValue(TOParser.getFigureNumber().trim());
                 field = pDAcroForm.getField("Vol");
-                field.setValue(ParsedInfo.volume.trim());
+                field.setValue(TOParser.getVolume().trim());
                 field = pDAcroForm.getField("TO");
-                field.setValue(ParsedInfo.technicalOrder.trim());
+                field.setValue(TOParser.getTechnicalOrderNum().trim());
 
-                //PartInfo
+                //Part
                 field = pDAcroForm.getField("Index");
-                field.setValue(Part.getCurrentPart().getFigure().replaceAll("-", "").trim());
+                field.setValue(PartInfo.getCurrentPart().getIndex().replaceAll("-", "").trim());
                 field = pDAcroForm.getField("Part");
-                field.setValue(Part.getCurrentPart().getPart().trim());
+                field.setValue(PartInfo.getCurrentPart().getPartNum().trim());
                 field = pDAcroForm.getField("Nomenclature");
-                field.setValue(Part.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
+                field.setValue(PartInfo.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
 
                 //Default
                 field = pDAcroForm.getField("AccessKey");

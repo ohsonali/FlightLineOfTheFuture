@@ -14,7 +14,7 @@ public class NSN {
     public String getNsn() {
         return nsn.get();
     }
-    public void setNsn(String nsn) {
+    public void setNSN(String nsn) {
         this.nsn.set(nsn);
     }
 

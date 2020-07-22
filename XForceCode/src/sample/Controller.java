@@ -43,52 +43,50 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static sample.ParsedInfo.figureNumber;
-
 public class Controller implements Initializable {
-    @FXML TableView<PartInfo> tableView;
+    @FXML TableView<Part> tableView;
     @FXML Text figure, figureDescription;
-    /*@FXML TableColumn<PartInfo, String> figureColumn;
-    @FXML TableColumn<PartInfo, String> indexColumn;
-    @FXML TableColumn<PartInfo, String> cageColumn;
-    @FXML TableColumn<PartInfo, String> descriptionColumn;
-    @FXML TableColumn<PartInfo, String> unitsColumn;
-    @FXML TableColumn<PartInfo, String> usableColumn;
-    @FXML TableColumn<PartInfo, String> SMRColumn;*/
+    /*@FXML TableColumn<Part, String> figureColumn;
+    @FXML TableColumn<Part, String> indexColumn;
+    @FXML TableColumn<Part, String> cageColumn;
+    @FXML TableColumn<Part, String> descriptionColumn;
+    @FXML TableColumn<Part, String> unitsColumn;
+    @FXML TableColumn<Part, String> usableColumn;
+    @FXML TableColumn<Part, String> SMRColumn;*/
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
         processParsedTO();
-        ParsedInfo.figureNumber = ParsedInfo.parts.get(0)[0];
-        if (ParsedInfo.parts.get(0)[3].trim().length() == 0) {
-            ParsedInfo.figureDescription = "Not Available";
-        } else {ParsedInfo.figureDescription = ParsedInfo.parts.get(0)[3];}
-        figure.setText("Figure: " + ParsedInfo.figureNumber);
-        figureDescription.setText("Figure Description: " + ParsedInfo.figureDescription);
+        TOParser.setFigureNumber(TOParser.getParts().get(0)[0]);
+        if (TOParser.getParts().get(0)[3].trim().length() == 0) {
+            TOParser.setFigureDescription("Not Available");
+        } else {TOParser.setFigureDescription(TOParser.getParts().get(0)[3]);}
+        figure.setText("Figure: " + TOParser.getFigureNumber());
+        figureDescription.setText("Figure Description: " + TOParser.getFigureDescription());
 
 
-        TableColumn figureColumn = new TableColumn("Index");
+        TableColumn indexColumn = new TableColumn("Index");
         TableColumn partColumn = new TableColumn("Part Number");
         TableColumn cageColumn = new TableColumn("Cage");
         TableColumn descriptionColumn = new TableColumn("Description");
         TableColumn unitsColumn = new TableColumn("Units");
         TableColumn usableColumn = new TableColumn("Usable");
         TableColumn smrColumn = new TableColumn("SMR Code");
-        TableColumn<PartInfo, Void> colBtn = new TableColumn("Button Column");
+        TableColumn<Part, Void> colBtn = new TableColumn("Button Column");
 
 
-        Callback<TableColumn<PartInfo, Void>, TableCell<PartInfo, Void>> cellFactory = new Callback<TableColumn<PartInfo, Void>, TableCell<PartInfo, Void>>() {
+        Callback<TableColumn<Part, Void>, TableCell<Part, Void>> cellFactory = new Callback<TableColumn<Part, Void>, TableCell<Part, Void>>() {
             @Override
-            public TableCell<PartInfo, Void> call(final TableColumn<PartInfo, Void> param) {
-                final TableCell<PartInfo, Void> cell = new TableCell<PartInfo, Void>() {
+            public TableCell<Part, Void> call(final TableColumn<Part, Void> param) {
+                final TableCell<Part, Void> cell = new TableCell<Part, Void>() {
 
                     private final Button btn = new Button("Order");
 
                     {
                         btn.setOnAction((ActionEvent event) -> {
-                            PartInfo partInfo = getTableView().getItems().get(getIndex());
+                            Part Part = getTableView().getItems().get(getIndex());
                             try {
-                                partClicked(partInfo, event);
+                                partClicked(Part, event);
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -111,103 +109,58 @@ public class Controller implements Initializable {
 
         colBtn.setCellFactory(cellFactory);
 
-        tableView.getColumns().addAll(figureColumn, partColumn, cageColumn, descriptionColumn, unitsColumn, usableColumn, smrColumn, colBtn);
+        tableView.getColumns().addAll(indexColumn, partColumn, cageColumn, descriptionColumn, unitsColumn, usableColumn, smrColumn, colBtn);
 
 
-        figureColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("figure"));
-        partColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("part"));
-        cageColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("cage"));
-        descriptionColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("description"));
-        unitsColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("units"));
-        usableColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("usable"));
-        smrColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("smr"));
+        indexColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("index"));
+        partColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("partNum"));
+        cageColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("cage"));
+        descriptionColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("description"));
+        unitsColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("units"));
+        usableColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("usable"));
+        smrColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("smr"));
 
-        tableView.setItems(getPartInfo());
+        tableView.setItems(getPart());
     }
 
-    public ObservableList<PartInfo> getPartInfo(){
-        ObservableList<PartInfo> parts = FXCollections.observableArrayList();
+    public ObservableList<Part> getPart(){
+        ObservableList<Part> tableParts = FXCollections.observableArrayList();
 
-        for(int i = 1; i < ParsedInfo.parts.size(); i++){
-            String figure = ParsedInfo.parts.get(i)[0];
-            String partNumber = ParsedInfo.parts.get(i)[1];
-            String cage = ParsedInfo.parts.get(i)[2];
-            String description = ParsedInfo.parts.get(i)[3].replaceAll("\\.", "").trim();
-            String units = ParsedInfo.parts.get(i)[4];
-            String usable = ParsedInfo.parts.get(i)[5];
-            String smr = ParsedInfo.parts.get(i)[6];
+        for(int i = 1; i < TOParser.getParts().size(); i++){
+            String index = TOParser.getParts().get(i)[0];
+            String partNumber = TOParser.getParts().get(i)[1];
+            String cage = TOParser.getParts().get(i)[2];
+            String description = TOParser.getParts().get(i)[3].replaceAll("\\.", "").trim();
+            String units = TOParser.getParts().get(i)[4];
+            String usable = TOParser.getParts().get(i)[5];
+            String smr = TOParser.getParts().get(i)[6];
 
-            parts.add(new PartInfo(figure, partNumber, cage, description, units, usable, smr));
+            tableParts.add(new Part(index, partNumber, cage, description, units, usable, smr));
 
         }
-        return parts;
+        return tableParts;
     }
 
-    public void partClicked(PartInfo part, ActionEvent e) throws Exception {
-        Part.addPart(part);
-        String partNumber = part.getPart().trim();
-        Document doc = Jsoup.connect("https://www.nsncenter.com/NSNSearch?q=" + partNumber).get();
-        Elements rows = doc.select("tr");
-        for (Element row : rows ) {
-            String[] entry = new String[3];
-            Elements nsns = row.select("a[href][onclick^='dataLayer.push({'event':'trackEvent','eventCategory':'Commerce','eventAction':'ProductClick','eventLabel':']");
-            Elements cages = row.select("a[href^='https://www.cagecode.info/']");
-            // code assumes we will only find one nsns and one cages per row
-            for (Element nsn : nsns) {
-                entry[0] = nsn.text();
-                Pattern descriptions = Pattern.compile(",'name':'(.*?)','category':'");
-                Matcher matcher = descriptions.matcher(nsn.attr("onclick"));
-                while (matcher.find()) {
-                    String rawDescription = matcher.group(1);
-                    String[] descList = rawDescription.split("(?=[,| ])");
-                    String description = "";
-                    int counter = 0;
-                    for (String desc : descList) {
-                        if (counter == 3) {
-                           description += "\n" + desc;
-                           counter = 1;
-                        } else {
-                            counter += 1;
-                            description += desc;
-                        }
-                    }
-                    entry[1] = description;
-                }
-            }
-            String cageStrings = "";
-            int counter = 0;
-            for (Element cage : cages) {
-                if (counter == 5) {
-                    cageStrings += "\n" + cage.text() + " ";
-                    counter = 0;
-                } else {
-                    cageStrings += cage.text() + " ";
-                }
-                counter += 1;
-            }
-            entry[2] = cageStrings;
-            if (entry[0] != null) {
-                ParsedInfo.nsn.add(entry);
-            }
-        }
-
-        if (ParsedInfo.nsn.size() == 1 ){
+    public void partClicked(Part part, ActionEvent e) throws Exception {
+        PartInfo.setCurrentPart(part);
+        NSNScrape.webScrape(part);
+        if (NSNScrape.getScrapedNSNs().size() == 1 ){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
-                    "We only found one possible NSN on NSNCenter.com. Confirm " + ParsedInfo.nsn.get(0)[0] + " ?", ButtonType.YES, ButtonType.CANCEL);
+                    "We only found one possible NSN on NSNCenter.com. Confirm " + NSNScrape.getScrapedNSNs().get(0)[0] + " ?", ButtonType.YES, ButtonType.CANCEL);
 
             alert.showAndWait();
 
             if (alert.getResult() == ButtonType.YES) {
-                String nsn = ParsedInfo.nsn.get(0)[0];
-                String description = ParsedInfo.nsn.get(0)[1];
-                String cage = ParsedInfo.nsn.get(0)[2];
-                Part.addNSN(new NSN (nsn, description, cage));
+                String nsn = NSNScrape.getScrapedNSNs().get(0)[0];
+                String description = NSNScrape.getScrapedNSNs().get(0)[1];
+                String cage = NSNScrape.getScrapedNSNs().get(0)[2];
+                PartInfo.setCurrentNSN(new NSN (nsn, description, cage));
                 openUserWindow(e);
             } else {
-                Part.removePart();
-                ParsedInfo.clearNSNList();
+                PartInfo.removePart();
+                NSNScrape.clearNSNList();
             }
-        } else if (ParsedInfo.nsn.size() == 0) {
+        } else if (NSNScrape.getScrapedNSNs().size() == 0) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
                     "We found zero possible NSNs on NSNCenter.com. Would you still like to proceed?", ButtonType.YES, ButtonType.NO);
             alert.showAndWait();
@@ -216,11 +169,11 @@ public class Controller implements Initializable {
                 String nsn = "";
                 String description = "";
                 String cage = "";
-                Part.addNSN(new NSN (nsn, description, cage));
+                PartInfo.setCurrentNSN(new NSN (nsn, description, cage));
                 openUserWindow(e);
             } else {
-                Part.removePart();
-                ParsedInfo.clearNSNList();
+                PartInfo.removePart();
+                NSNScrape.clearNSNList();
             }
         } else {
             openNSNWindow(e);
@@ -245,26 +198,26 @@ public class Controller implements Initializable {
     }
 
     public void processParsedTO() {
-        for (int i = 0; i <ParsedInfo.parts.size(); i++) {
-            String figure = ParsedInfo.parts.get(i)[0];
-            String partNumber = ParsedInfo.parts.get(i)[1];
-            String cage = ParsedInfo.parts.get(i)[2];
-            String description = ParsedInfo.parts.get(i)[3];
-            String units = ParsedInfo.parts.get(i)[4];
-            String usable = ParsedInfo.parts.get(i)[5];
-            String smr = ParsedInfo.parts.get(i)[6];
+        for (int i = 0; i <TOParser.getParts().size(); i++) {
+            String index = TOParser.getParts().get(i)[0];
+            String partNumber = TOParser.getParts().get(i)[1];
+            String cage = TOParser.getParts().get(i)[2];
+            String description = TOParser.getParts().get(i)[3];
+            String units = TOParser.getParts().get(i)[4];
+            String usable = TOParser.getParts().get(i)[5];
+            String smr = TOParser.getParts().get(i)[6];
             String[] partLines = stringLines(partNumber);
-            if (figure.trim().length() == 0 && partNumber.trim().length() == 0 && cage.trim().length() == 0 && description.trim().length() == 0 &&
+            if (index.trim().length() == 0 && partNumber.trim().length() == 0 && cage.trim().length() == 0 && description.trim().length() == 0 &&
                     units.trim().length() == 0 && usable.trim().length() == 0 && smr.trim().length() == 0) {
-                ParsedInfo.parts.remove(i);
+                TOParser.getParts().remove(i);
             }
 
             if (partLines.length > 1) {
                 String[] cageLines = stringLines(cage);
                 String[] smrLines = stringLines(smr);
                 for (int j = 0; j < partLines.length; j++) {
-                    String[] newRow = new String[ParsedInfo.parts.get(i).length];
-                    newRow[0] = figure;
+                    String[] newRow = new String[TOParser.getParts().get(i).length];
+                    newRow[0] = index;
                     newRow[3] = description;
                     newRow[4] = units;
                     newRow[5] = usable;
@@ -272,9 +225,9 @@ public class Controller implements Initializable {
                     newRow[1] = partLines[j].replace(" 4", " =");
                     newRow[2] = cageLines[j];
                     newRow[6] = smrLines[j];
-                    ParsedInfo.parts.add(i + j + 1, newRow);
+                    TOParser.getParts().add(i + j + 1, newRow);
                 }
-                ParsedInfo.parts.remove(i);
+                TOParser.getParts().remove(i);
             }
         }
     }

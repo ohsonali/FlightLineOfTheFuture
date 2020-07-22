@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 
 public class PDFDimensionFinder extends PDFTextStripperByArea {
-    public ArrayList<Integer> rowYCoordinates = new ArrayList<>();
+    private ArrayList<Integer> rowYCoordinates = new ArrayList<>();
     private boolean firstChar = true;
-    public int pageOffset;
+    private int pageOffset;
 
     public PDFDimensionFinder() throws IOException {
         super();
@@ -41,12 +41,21 @@ public class PDFDimensionFinder extends PDFTextStripperByArea {
 
 
     protected void findRowYCoordinates(TextPosition pos) {
-        if (pos.getX() > Utils.leftStart + pageOffset && pos.getX() < Utils.leftStart + pageOffset + Utils.figureWidth && pos.getY()
+        if (pos.getX() > Utils.leftStart + pageOffset && pos.getX() < Utils.leftStart + pageOffset + Utils.indexWidth && pos.getY()
                 > Utils.startHeight && pos.getY() < Utils.tableHeight + Utils.startHeight) {
             int currentY = (int) (pos.getY() - pos.getHeight());
             if (!rowYCoordinates.contains(currentY)) {
                 rowYCoordinates.add(currentY);
             }
         }
+    }
+
+
+    public ArrayList<Integer> getRowYCoordinates() {
+        return rowYCoordinates;
+    }
+
+    public int getPageOffset() {
+        return pageOffset;
     }
 }
