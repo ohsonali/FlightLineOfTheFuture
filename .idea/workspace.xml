@@ -20,37 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e124754a-620d-459d-b33f-0846ac8c8ec9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/NSNScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/NSNScrape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/OurPDFTextStripper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/nsn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/NSNController.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/nsnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/NSNController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/MainController.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/MainController.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/NSNScrape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/NSNScrape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/OurPDFTextStripper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserWindowController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsn.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/sample.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/sample.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,22 +127,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="459" y="348" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595369766278" />
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1595462114092">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1595462415043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595462114092" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1595462114092">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595462415043" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1595462415043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595462114092" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1595462114092">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595462415043" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1595462415043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595462114092" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1595462114092">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595462415043" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1595462415043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595462114092" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595462415043" />
     <state width="868" height="195" key="GridCell.Tab.1.bottom" timestamp="1594769761838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
