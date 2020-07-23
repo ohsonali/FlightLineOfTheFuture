@@ -20,7 +20,7 @@ import java.awt.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class nsnController implements Initializable {
+public class NSNController implements Initializable {
     @FXML
     TableView<NSN> tableView;
     @FXML
@@ -30,7 +30,7 @@ public class nsnController implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
-        partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum().trim());
+        partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum().replaceAll("[#=]", "").trim());
         partDescription.setText("Description: " + PartInfo.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
         cage.setText("Cage: " + PartInfo.getCurrentPart().getCage());
 
@@ -147,7 +147,7 @@ public class nsnController implements Initializable {
 
     public void openUserWindow(NSN nsn, ActionEvent e) throws Exception {
         PartInfo.setCurrentNSN(nsn);
-        Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("UserEntryController.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -165,7 +165,7 @@ public class nsnController implements Initializable {
     public void cancel (ActionEvent e) throws Exception {
         PartInfo.removePart();
         NSNScrape.clearNSNList();
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MainController.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);

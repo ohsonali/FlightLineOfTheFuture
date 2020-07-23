@@ -8,42 +8,23 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 
-import javafx.application.Application;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Callback;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 
-import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.ResourceBundle;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class Controller implements Initializable {
+public class MainController implements Initializable {
     @FXML TableView<Part> tableView;
     @FXML Text figure, figureDescription;
     /*@FXML TableColumn<Part, String> figureColumn;
@@ -182,7 +163,7 @@ public class Controller implements Initializable {
 
 
     public void openNSNWindow (ActionEvent e) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("nsn.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("NSNController.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -190,7 +171,7 @@ public class Controller implements Initializable {
     }
 
     public void openUserWindow (ActionEvent e) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("UserEntryController.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);

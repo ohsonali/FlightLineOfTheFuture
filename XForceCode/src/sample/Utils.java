@@ -1,6 +1,9 @@
 package sample;
 
 public class Utils {
+
+    static boolean bernard;
+
     static int leftStart = 37;
     static int rightStart = 72;
     static int firstLeft = 39;

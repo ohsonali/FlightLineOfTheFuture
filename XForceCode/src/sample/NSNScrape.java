@@ -13,9 +13,6 @@ import java.util.regex.Pattern;
 public class NSNScrape {
 
     private static ArrayList<String[]> scrapedNSNs = new ArrayList<>();
-    public static void clearNSNList() {
-        scrapedNSNs = new ArrayList<>();
-    }
 
     public static void webScrape(Part part) throws IOException {
         String partNumber = part.getPartNum().trim();
@@ -65,6 +62,9 @@ public class NSNScrape {
         }
     }
 
+    public static void clearNSNList() {
+        scrapedNSNs = new ArrayList<>();
+    }
 
     public static ArrayList<String[]> getScrapedNSNs() {
         return scrapedNSNs;

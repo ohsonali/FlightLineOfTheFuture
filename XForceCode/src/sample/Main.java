@@ -7,33 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.io.*;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.apache.pdfbox.pdfparser.PDFParser;
-import org.apache.pdfbox.text.PDFTextStripperByArea;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
-import org.apache.pdfbox.pdmodel.interactive.form.PDField;
-import org.apache.pdfbox.text.PDFTextStripper;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MainController.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -50,11 +31,10 @@ public class Main extends Application {
             System.out.println();
         }
         */
-        TOParser readTO = new TOParser(true, 3);
-        readTO.parse();
+        Utils.bernard = Boolean.parseBoolean(args[0]);
 
-        File file2 = new File(Utils.bernard9006File);
-        PDDocument document2 = PDDocument.load(file2);
+        TOParser readTO = new TOParser(Utils.bernard, 3);
+        readTO.parse();
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
         //pdfStripper.setStartPage(3);
@@ -91,7 +71,6 @@ ut in new class. Put all the figure and index numbers into an
     */
 
 
-
 //        Rectangle rect = new Rectangle( Utils.leftStart + leanFinder.x, Utils.startHeight, Utils.figureWidth, Utils.tableHeight);
 //        pdfStripperArea.addRegion("Figure and Index", rect);
 //        PDPage docPage = document.getPage(3);
@@ -121,103 +100,33 @@ ut in new class. Put all the figure and index numbers into an
 //         for every name
 
 
-
-
-
-
         //System.out.println(text);
 
         launch(args);
 
-
         if (PartInfo.getJCN() != null && PartInfo.getQuantity() != null && PartInfo.getCurrentPart() != null) {
+            if (!PartInfo.getJCN().trim().isEmpty() && !PartInfo.getQuantity().trim().isEmpty()) {
+                Autofiller f9006filler = new Autofiller(Utils.bernard);
+                f9006filler.fill9006();
 
-            try {
-                PDAcroForm pDAcroForm = document2.getDocumentCatalog().getAcroForm();
-
-                for (PDField field : pDAcroForm.getFields()) {
-                    if (field.getFieldType().equals("Tx")) {
-                        field.setValue("");
+                if (Utils.bernard) {
+                    if (!Desktop.isDesktopSupported()) {
+                        System.out.println("not supported");
+                        System.exit(0);
                     }
+                    Desktop desktop = Desktop.getDesktop();
+                    desktop.open(new File(Utils.bernard9006File));
+                } else {
+                /*
+                if (!Desktop.isDesktopSupported()) {
+                    System.out.println("not supported");
+                    System.exit(0);
                 }
-
-                //Part
-                PDField field = pDAcroForm.getField("JCN");
-                field.setValue(PartInfo.getJCN().trim());
-                field = pDAcroForm.getField("Quantity");
-                field.setValue(PartInfo.getQuantity().trim());
-                field = pDAcroForm.getField("Stock");
-                field.setValue(PartInfo.getCurrentNSN().getNsn().trim());
-
-                //TOParser
-                field = pDAcroForm.getField("Fig");
-                field.setValue(TOParser.getFigureNumber().trim());
-                field = pDAcroForm.getField("Vol");
-                field.setValue(TOParser.getVolume().trim());
-                field = pDAcroForm.getField("TO");
-                field.setValue(TOParser.getTechnicalOrderNum().trim());
-
-                //Part
-                field = pDAcroForm.getField("Index");
-                field.setValue(PartInfo.getCurrentPart().getIndex().replaceAll("-", "").trim());
-                field = pDAcroForm.getField("Part");
-                field.setValue(PartInfo.getCurrentPart().getPartNum().trim());
-                field = pDAcroForm.getField("Nomenclature");
-                field.setValue(PartInfo.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
-
-                //Default
-                field = pDAcroForm.getField("AccessKey");
-                field.setValue("*12");
-                field = pDAcroForm.getField("Doc");
-                field.setValue("*A123BC01554001");
-                field = pDAcroForm.getField("WUC");
-                field.setValue("*1234AA567");
-                field = pDAcroForm.getField("SerID");
-                field.setValue("*12345678");
-                field = pDAcroForm.getField("Org");
-                field.setValue("*123BC");
-
-                field = pDAcroForm.getField("CreateDate");
-                GregorianCalendar now = new GregorianCalendar();
-                now.setTimeInMillis(System.currentTimeMillis());
-                String date = String.format("%1$tb %1$te %1$tY", now);
-                field.setValue(date);
-
-                field = pDAcroForm.getField("Emp");
-                field.setValue("*12345");
-                field = pDAcroForm.getField("Shop");
-                field.setValue("*A1BCD");
-                field = pDAcroForm.getField("Base");
-                field.setValue("*ABCD");
-                field = pDAcroForm.getField("SRAN");
-                field.setValue("*AB1234");
-                field = pDAcroForm.getField("Priority");
-                field.setValue("*04");
-                field = pDAcroForm.getField("Dest");
-                field.setValue("*ABC");
-                field = pDAcroForm.getField("Requester");
-                field.setValue("*Bernard");
-                field = pDAcroForm.getField("Verify");
-                field.setValue("*Sonali");
-                field = pDAcroForm.getField("Remarks");
-                field.setValue("*NSIN X-Force");
-                field = pDAcroForm.getField("Date");
-                field.setValue(date);
-                String time = String.format("%1$tH %1$tM", now);
-                field = pDAcroForm.getField("NeedTime");
-                field.setValue(time);
-
-                document2.save(file2.getPath());
-            } catch (IOException e) {
-                e.printStackTrace();
+                Desktop desktop = Desktop.getDesktop();
+                desktop.open(new File(Utils.sonali9006File));
+                */
+                }
             }
-            /*if (!Desktop.isDesktopSupported()) {
-                System.out.println("not supported");
-                System.exit(0);
-            }
-            Desktop desktop = Desktop.getDesktop();
-            desktop.open(file2);*/
         }
     }
-
 }
