@@ -4,8 +4,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-/** This class holds the logic to check a particular part  */
+/** This class holds the logic of checking a part's inventory in the supply database
+ * @author Bernard Chan, Sonali Loomba
+ * */
 public class Supply {
+    /**
+     * Finds the inventory of a part in the supply database based on the National Stock Number of the part
+     * @param nsn the National Stock Number to check
+     * @param bernard specifies the user
+     * @return String number amount of the part that is in stock
+     */
     public static String checkInventory(String nsn, boolean bernard) {
         File csv;
         if (bernard) {
