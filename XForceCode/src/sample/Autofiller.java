@@ -9,13 +9,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 /**
- * This class holds the logic of autofilling a page
+ * Auto fills the F9006 pdf form based on the information stored in <code>PartInfo</code> and <code>TOParser</code>
  * @author Bernard Chan, Sonali Loomba
  * */
 public class Autofiller {
+    /** The F9006 pdf document as a PDDocument */
     private final PDDocument f9006;
+    /** The F9006 pdf document as a File */
     private final File f9006path;
-
+    /**
+     * Autofiller constructor
+     *
+     * @param Bernard defines user
+     * @throws IOException in case of error loading PDDocument or opening File
+     *
+     */
     public Autofiller(boolean Bernard) throws IOException {
         if (Bernard) {
             f9006path = new File(Utils.bernard9006File);
@@ -25,7 +33,9 @@ public class Autofiller {
         f9006 = PDDocument.load(f9006path);
     }
 
-
+    /**
+     * Fills out the F9006 form
+     */
     public void fill9006() {
         try {
             PDAcroForm pDAcroForm = f9006.getDocumentCatalog().getAcroForm();
