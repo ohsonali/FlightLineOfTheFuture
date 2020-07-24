@@ -1,11 +1,14 @@
 package sample;
 
 public class Utils {
+
+    static boolean bernard;
+
     static int leftStart = 37;
     static int rightStart = 72;
     static int firstLeft = 39;
     static int firstRight = 75;
-    static int figureWidth = 50;
+    static int indexWidth = 50;
     static int partWidth = 94;
     static int cageWidth = 35;
     static int descWidth = 200;

@@ -20,7 +20,10 @@ import java.awt.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class nsnController implements Initializable {
+/**
+ * Sample
+ */
+public class NSNController implements Initializable {
     @FXML
     TableView<NSN> tableView;
     @FXML
@@ -30,9 +33,9 @@ public class nsnController implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle rb){
-        partNumber.setText("Part Number: " + Part.getCurrentPart().getPart().trim());
-        partDescription.setText("Description: " + Part.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
-        cage.setText("Cage: " + Part.getCurrentPart().getCage());
+        partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum().replaceAll("[#=]", "").trim());
+        partDescription.setText("Description: " + PartInfo.getCurrentPart().getDescription().replaceAll("\\.", "").trim());
+        cage.setText("Cage: " + PartInfo.getCurrentPart().getCage());
 
 
         TableColumn nsnColumn = new TableColumn("NSN");
@@ -125,9 +128,9 @@ public class nsnController implements Initializable {
         tableView.getColumns().addAll(nsnColumn, descriptionColumn, cageColumn, colBtn, infoBtn);
 
 
-        nsnColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("nsn"));
-        descriptionColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("description"));
-        cageColumn.setCellValueFactory(new PropertyValueFactory<PartInfo, String>("cage"));
+        nsnColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("nsn"));
+        descriptionColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("description"));
+        cageColumn.setCellValueFactory(new PropertyValueFactory<Part, String>("cage"));
 
         tableView.setItems(getNSNInfo());
     }
@@ -135,10 +138,10 @@ public class nsnController implements Initializable {
     public ObservableList<NSN> getNSNInfo(){
         ObservableList<NSN> nsns = FXCollections.observableArrayList();
 
-        for(int i = 0; i < ParsedInfo.nsn.size(); i++){
-            String nsn = ParsedInfo.nsn.get(i)[0];
-            String description = ParsedInfo.nsn.get(i)[1];
-            String cage = ParsedInfo.nsn.get(i)[2];
+        for(int i = 0; i < NSNScrape.getScrapedNSNs().size(); i++){
+            String nsn = NSNScrape.getScrapedNSNs().get(i)[0];
+            String description = NSNScrape.getScrapedNSNs().get(i)[1];
+            String cage = NSNScrape.getScrapedNSNs().get(i)[2];
 
             nsns.add(new NSN(nsn, description, cage));
         }
@@ -146,8 +149,8 @@ public class nsnController implements Initializable {
     }
 
     public void openUserWindow(NSN nsn, ActionEvent e) throws Exception {
-        Part.addNSN(nsn);
-        Parent root = FXMLLoader.load(getClass().getResource("UserWindow.fxml"));
+        PartInfo.setCurrentNSN(nsn);
+        Parent root = FXMLLoader.load(getClass().getResource("UserEntryController.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -163,9 +166,9 @@ public class nsnController implements Initializable {
     }
 
     public void cancel (ActionEvent e) throws Exception {
-        Part.removePart();
-        ParsedInfo.clearNSNList();
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        PartInfo.removePart();
+        NSNScrape.clearNSNList();
+        Parent root = FXMLLoader.load(getClass().getResource("MainController.fxml"));
         Scene scene = new Scene(root);
         Stage window = (Stage) ((Node) e.getSource()).getScene().getWindow();
         window.setScene(scene);
