@@ -33,7 +33,7 @@ public class Main extends Application {
         */
         Utils.bernard = Boolean.parseBoolean(args[0]);
 
-        TOParser readTO = new TOParser(Utils.bernard, 3);
+        TOParser readTO = new TOParser(Utils.bernard, Integer.parseInt(args[1]));
         readTO.parse();
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
