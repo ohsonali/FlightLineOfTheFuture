@@ -32,7 +32,7 @@ public class UserEntryController implements Initializable {
         partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum().replaceAll("[#=]", "").trim());
         nsn.setText("NSN: " + PartInfo.getCurrentNSN().getNsn());
         description.setText("Description: " + PartInfo.getCurrentPart().getDescription());
-        stock.setText("Quantity in Stock: " + Supply.checkInventory(Utils.bernard));
+        stock.setText("Quantity in Stock: " + Supply.checkInventory(PartInfo.getCurrentNSN().getNsn(), Utils.bernard));
     }
 
     public void order (ActionEvent e) throws Exception {

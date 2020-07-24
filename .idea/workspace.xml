@@ -1,179 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/pdfbox_app_2_0_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/pdfbox_app_2_0_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontbox_2_0_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/XForceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/XForceCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/out/production/XForceCode/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/out/production/XForceCode/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/out/production/XForceCode/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/NSN.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/NSN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/OurPDFTextStripper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PDFLeanFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/ParsedInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Part.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserWindowController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/confirm.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/confirmController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/nsn.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/nsnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/nsnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/sample.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/NSN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/NSN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/OurPDFTextStripper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PDFLeanFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/ParsedInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Part.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserWindowController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/confirm.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/confirmController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsn.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/META-INF/XForceCode.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/nsnController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/sample.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/sample.fxml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2437">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="45" column="60" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Part.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding>
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#892#893#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1240#1241#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#1398#1399#0" expanded="true" />
-                <element signature="e#1450#1451#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1618#1619#0" expanded="true" />
-                <element signature="e#1657#1658#0" expanded="true" />
-                <element signature="e#1760#1761#0" expanded="true" />
-                <element signature="e#1794#1795#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Supply.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -190,26 +57,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/nsnController.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/nsn.fxml" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/UserWindowController.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/ParsedInfo.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/NSNController.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="807" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -244,23 +91,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595550866573" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.media.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -297,268 +134,50 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1" y="24" width="1440" height="807" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33006993" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Style Checker" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/nsn.fxml" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserWindowController.java" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserWindow.fxml" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/ParsedInfo.java" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PDFLeanFinder.java" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSNController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/TOParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1402">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#4792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="45" column="60" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Supply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2437">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1595551882234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595551882234" />
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1595551906625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595551906625" />
+    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1595551906625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595551906625" />
+    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1595551906625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595551906625" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1595551906625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595551906625" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1595551885193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595551885193" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>XForceCode</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>lib</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="sample.Controller$1" fieldName="tableRow" />
+        <PinnedItemInfo typeName="sample.Controller$1" fieldName="tableRowUpdateObserver" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
