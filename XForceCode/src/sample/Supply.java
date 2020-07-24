@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-/** This class holds the logic of checking a part's inventory in the supply database
+/**
+ * This class holds the logic of checking a part's inventory in the supply database
  * @author Bernard Chan, Sonali Loomba
  * */
 public class Supply {

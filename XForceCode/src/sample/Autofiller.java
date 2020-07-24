@@ -8,7 +8,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
-
+/**
+ * This class holds the logic of autofilling a page
+ * @author Bernard Chan, Sonali Loomba
+ * */
 public class Autofiller {
     private final PDDocument f9006;
     private final File f9006path;

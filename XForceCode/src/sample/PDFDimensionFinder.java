@@ -6,13 +6,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 /**
  * This class extends PDFTextStripperByArea
- * @link https://pdfbox.apache.org/docs/2.0.1/javadocs/org/apache/pdfbox/text/PDFTextStripperByArea.html
+ * @see <a href="https://pdfbox.apache.org/docs/2.0.1/javadocs/org/apache/pdfbox/text/PDFTextStripperByArea.html">https://pdfbox.apache.org/docs/2.0.1/javadocs/org/apache/pdfbox/text/PDFTextStripperByArea.html</a>
  * to determine the pixel locations of the rows on the table
- * 
+ *
  * @author Bernard Chan, Sonali Loomba
  *
  */
-
 public class PDFDimensionFinder extends PDFTextStripperByArea {
     /** Stores the Y-Coordinate positions of the rows in the table */
     private ArrayList<Integer> rowYCoordinates = new ArrayList<>();

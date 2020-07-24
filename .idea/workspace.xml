@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" afterDir="false" />
-    </list>
+    <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
