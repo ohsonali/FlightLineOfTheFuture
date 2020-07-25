@@ -1,3 +1,5 @@
+// File: Supply.java
+// Supply class to check inventory
 package sample;
 
 import java.io.BufferedReader;

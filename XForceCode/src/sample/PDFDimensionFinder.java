@@ -1,3 +1,5 @@
+// File: PDFDimensionFinder.java
+// PDFDimensionFinder class with get methods
 package sample;
 
 import org.apache.pdfbox.text.PDFTextStripperByArea;

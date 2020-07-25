@@ -1,3 +1,5 @@
+// File: Utils.java
+// Utils class with stored pixel dimensions
 package sample;
 
 /**

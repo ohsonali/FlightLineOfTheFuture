@@ -1,3 +1,6 @@
+// File: Autofiller.java
+// Autofiller class with autofilling logic
+
 package sample;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
