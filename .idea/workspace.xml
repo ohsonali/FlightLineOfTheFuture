@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +43,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1f9nd9eVe7MaZdiULk9TFTE3PXL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595550866573" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.media.jar!/" />
@@ -113,22 +116,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595551882234" />
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1595557814352">
+    <state width="1116" height="289" key="GridCell.Tab.0.bottom" timestamp="1595562988449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595557814352" />
-    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1595557814352">
+    <state width="1116" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595562988449" />
+    <state width="1116" height="289" key="GridCell.Tab.0.center" timestamp="1595562988449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595557814352" />
-    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1595557814352">
+    <state width="1116" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595562988449" />
+    <state width="1116" height="289" key="GridCell.Tab.0.left" timestamp="1595562988449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595557814352" />
-    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1595557814352">
+    <state width="1116" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595562988449" />
+    <state width="1116" height="289" key="GridCell.Tab.0.right" timestamp="1595562988449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595557814352" />
+    <state width="1116" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595562988449" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1595557751042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
