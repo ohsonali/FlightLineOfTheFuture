@@ -1,3 +1,5 @@
+//File: MainController.java
+//MainController class controls the MainController.fxml window
 package sample;
 
 import javafx.collections.FXCollections;
@@ -24,17 +26,29 @@ import javafx.util.Callback;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MainController implements Initializable {
-    @FXML TableView<Part> tableView;
-    @FXML Text figure, figureDescription;
-    /*@FXML TableColumn<Part, String> figureColumn;
-    @FXML TableColumn<Part, String> indexColumn;
-    @FXML TableColumn<Part, String> cageColumn;
-    @FXML TableColumn<Part, String> descriptionColumn;
-    @FXML TableColumn<Part, String> unitsColumn;
-    @FXML TableColumn<Part, String> usableColumn;
-    @FXML TableColumn<Part, String> SMRColumn;*/
+/**
+ * This class controls the table display of parsed parts from the technical order PDF
+ * @author Bernard Chan, Sonali Loomba
+ */
 
+public class MainController implements Initializable {
+    /** fx id of TableView with row objects of type Part*/
+    @FXML TableView<Part> tableView;
+    /** fx id of Text displaying the parts' corresponding figure number */
+    @FXML Text figure;
+    /** fx id of Text displaying the parts' corresponding figure description */
+    @FXML Text figureDescription;
+
+
+    /**
+     * Initializes MainController.fxml window
+     * Sets figure number and figure description for parts list
+     * Creates rows with columns displaying index, part number, cage number, description, units of assembly,
+     * usable on code, SMR code, and Order Button for each part
+     *
+     * @param url
+     * @param rb
+     */
     @Override
     public void initialize (URL url, ResourceBundle rb){
         processParsedTO();
@@ -103,7 +117,10 @@ public class MainController implements Initializable {
 
         tableView.setItems(getPart());
     }
-
+    /**
+     * Creates a displayable list of all parts in technical order PDF from <code>TOParser.getParts()</code>
+     * @return an ObservableList of type Part
+     */
     public ObservableList<Part> getPart(){
         ObservableList<Part> tableParts = FXCollections.observableArrayList();
 
@@ -122,6 +139,15 @@ public class MainController implements Initializable {
         return tableParts;
     }
 
+    /**
+     * Stores user's chosen part in <code>PartInfo.currentPart</code>
+     * Finds all possible matching NSNs for chosen part <code>NSNScrape.webScrape()</code>
+     * Opens NSNController.fxml or confirmation window depending on number of matching NSNs
+     *
+     * @param part user's chosen part
+     * @param e button clicked
+     * @throws Exception if <code>NSNScrape.webScrape()</code> or <code>openUserWindow()</code> is unable to load
+     */
     public void partClicked(Part part, ActionEvent e) throws Exception {
         PartInfo.setCurrentPart(part);
         NSNScrape.webScrape(part);
@@ -162,6 +188,11 @@ public class MainController implements Initializable {
     }
 
 
+    /**
+     * Opens NSNController.fxml
+     * @param e button clicked and more than one matching NSN
+     * @throws Exception if NSNController.fxml is unable to load
+     */
     public void openNSNWindow (ActionEvent e) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("NSNController.fxml"));
         Scene scene = new Scene(root);
@@ -170,6 +201,11 @@ public class MainController implements Initializable {
         window.show();
     }
 
+    /**
+     * Opens UserEntryController.fxml
+     * @param e button clicked and one or less matching NSNs
+     * @throws Exception if UserEntryController.fxml is unable to load
+     */
     public void openUserWindow (ActionEvent e) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("UserEntryController.fxml"));
         Scene scene = new Scene(root);
@@ -178,6 +214,10 @@ public class MainController implements Initializable {
         window.show();
     }
 
+    /**
+     * Removes empty rows from <code>TOParser.parts</code>
+     * Separates multiple part numbers matching a single index
+     */
     public void processParsedTO() {
         for (int i = 0; i <TOParser.getParts().size(); i++) {
             String index = TOParser.getParts().get(i)[0];
@@ -213,6 +253,11 @@ public class MainController implements Initializable {
         }
     }
 
+    /**
+     * Splits text with multiple lines into separate Strings
+     * @param str String to be split
+     * @return array of split Strings
+     */
     public static String[] stringLines(String str){
         return str.split("\r\n|\r|\n");
     }
