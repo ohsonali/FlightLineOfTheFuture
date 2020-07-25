@@ -20,7 +20,6 @@ import java.util.Collections;
  * @author Bernard Chan, Sonali Loomba
  *
 */
-
 public class TOParser {
     /** Stores current PDF document */
     private final PDDocument technicalOrder;

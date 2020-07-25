@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/NSNScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/NSNScrape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

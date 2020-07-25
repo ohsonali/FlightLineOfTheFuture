@@ -85,7 +85,7 @@ public class NSNScrape {
     }
     /**
      * Gets <code>scrapedNSNs</code>
-     * @return an Arraylist specifying the scraped NSNs 
+     * @return an Arraylist specifying the scraped NSNs
      */
     public static ArrayList<String[]> getScrapedNSNs() {
         return scrapedNSNs;
