@@ -1,3 +1,6 @@
+//File: NSNController.java
+//NSNController class controls the NSNController.fxml window
+
 package sample;
 
 import javafx.collections.FXCollections;
@@ -21,16 +24,31 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * Sample
+ * This class controls the table display of webscraped National Stock Numbers that match the user's chosen part
+ * @author Bernard Chan, Sonali Loomba
  */
 public class NSNController implements Initializable {
-    @FXML
-    TableView<NSN> tableView;
-    @FXML
-    Text partNumber, partDescription, cage;
-    @FXML
-    Button cancel;
 
+    /** fx id of TableView with row objects of type NSN*/
+    @FXML TableView<NSN> tableView;
+    /** fx id of Text displaying chosen part number */
+    @FXML Text partNumber;
+    /** fx id of Text displaying chosen part's description */
+    @FXML Text partDescription;
+    /** fx id of Text displaying chosen part's cage */
+    @FXML Text cage;
+    /** fx id of Button to exit chosen part's matching NSNs and return to MainController.fxml window with TO part table*/
+    @FXML Button cancel;
+
+
+    /**
+     * Initializes NSNController.fxml window
+     * Sets part number, description and cage from chosen part's relevant fields
+     * Creates hoverable rows with columns displaying NSN, Description, Cage, Confirmation Button, and Link Button for each NSN
+     *
+     * @param url
+     * @param rb
+     */
     @Override
     public void initialize (URL url, ResourceBundle rb){
         partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum().replaceAll("[#=]", "").trim());
@@ -135,6 +153,11 @@ public class NSNController implements Initializable {
         tableView.setItems(getNSNInfo());
     }
 
+
+    /**
+     * Creates a displayable list of all NSNs for chosen part from <code>NSNScrape.getScrapedNSNs()</code>
+     * @return an ObservableList of type NSN
+     */
     public ObservableList<NSN> getNSNInfo(){
         ObservableList<NSN> nsns = FXCollections.observableArrayList();
 
@@ -148,6 +171,12 @@ public class NSNController implements Initializable {
         return nsns;
     }
 
+    /**
+     * Opens UserEntryWindow.fxml
+     * @param nsn NSN user chose
+     * @param e button clicked
+     * @throws Exception if UserEntry window is unable to load
+     */
     public void openUserWindow(NSN nsn, ActionEvent e) throws Exception {
         PartInfo.setCurrentNSN(nsn);
         Parent root = FXMLLoader.load(getClass().getResource("UserEntryController.fxml"));
@@ -157,6 +186,10 @@ public class NSNController implements Initializable {
         window.show();
     }
 
+    /**
+     * Opens user's browser for specified NSN's webpage
+     * @param url specified NSN's link to nsncenter.com
+     */
     public void openWeb(String url) {
         try {
             Desktop.getDesktop().browse(new URL(url).toURI());
@@ -165,6 +198,11 @@ public class NSNController implements Initializable {
         }
     }
 
+    /**
+     * Returns to MainController.fxml window with TO part table and clears chosen part information
+     * @param e button clicked
+     * @throws Exception if MainController.fxml is unable to load
+     */
     public void cancel (ActionEvent e) throws Exception {
         PartInfo.removePart();
         NSNScrape.clearNSNList();
