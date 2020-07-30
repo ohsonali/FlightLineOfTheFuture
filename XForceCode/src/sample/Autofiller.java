@@ -116,6 +116,7 @@ public class Autofiller {
             field.setValue(time);
 
             f9006.save(f9006path.getPath());
+            f9006.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
