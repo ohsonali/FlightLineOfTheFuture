@@ -44,10 +44,11 @@ public class Utils {
     static int headerHeight = 44;
 
     //didn't do these as we will probably replace these
-    static String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-    static String bernardFile = "C:/Users/berna_000/Desktop/Pages from 1C-17A-4-33 (2).pdf";
-    static String bernard9006File = "C:/Users/berna_000/Desktop/my9006.pdf";
-    static String bernardcsv = "C:/Users/berna_000/Desktop/Mock Warehouse.csv";
+    static String bernardargs = "true 3";
+    static String bernardConfig = "--module-path C:/Users/berna_000/Desktop/XForceCode/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
+    static String bernardFile = System.getProperty("user.dir") + "/Pages from 1C-17A-4-33 (2).pdf";
+    static String bernard9006File = System.getProperty("user.dir") + "/my9006.pdf";
+    static String bernardcsv = System.getProperty("user.dir") + "/Mock Warehouse.csv";
     static String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33 (2).pdf";
     static String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
     static String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";
