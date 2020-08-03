@@ -24,9 +24,8 @@ public class Main extends Application {
             System.out.println();
         }
         */
-        Utils.bernard = Boolean.parseBoolean(args[0]);
 
-        TOParser readTO = new TOParser(Utils.bernard, Integer.parseInt(args[1]));
+        TOParser readTO = new TOParser(Integer.parseInt(args[0]));
         readTO.parse();
 
         //OurPDFTextStripper pdfStripper = new OurPDFTextStripper();
@@ -95,25 +94,14 @@ ut in new class. Put all the figure and index numbers into an
 
         if (PartInfo.getJCN() != null && PartInfo.getQuantity() != null && PartInfo.getCurrentPart() != null) {
             if (!PartInfo.getJCN().trim().isEmpty() && !PartInfo.getQuantity().trim().isEmpty()) {
-                Autofiller f9006filler = new Autofiller(Utils.bernard);
+                Autofiller f9006filler = new Autofiller();
                 f9006filler.fill9006();
-
-                if (Utils.bernard) {
-                    if (!Desktop.isDesktopSupported()) {
-                        System.out.println("not supported");
-                        System.exit(0);
-                    }
-                    Desktop desktop = Desktop.getDesktop();
-                    desktop.open(new File(Utils.bernard9006File));
-                } else {
-                /*
                 if (!Desktop.isDesktopSupported()) {
                     System.out.println("not supported");
                     System.exit(0);
-                }
-                Desktop desktop = Desktop.getDesktop();
-                desktop.open(new File(Utils.sonali9006File));
-                */
+                } else {
+                    Desktop desktop = Desktop.getDesktop();
+                    desktop.open(new File(Utils.f9006File));
                 }
             }
         }

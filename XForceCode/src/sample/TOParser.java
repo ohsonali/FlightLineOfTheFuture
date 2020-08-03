@@ -42,18 +42,13 @@ public class TOParser {
     /**
      * TOParser constructor
      *
-     * @param Bernard defines user
      * @param page page number of technical order
      * @throws IOException in case of error opening PDDocument
      *
      */
-    public TOParser(boolean Bernard, int page) throws IOException {
+    public TOParser(int page) throws IOException {
         this.page = page;
-        if (Bernard) {
-            technicalOrder = PDDocument.load(new File(Utils.bernardFile));
-        } else {
-            technicalOrder = PDDocument.load(new File(Utils.sonaliFile));
-        }
+        technicalOrder = PDDocument.load(new File(Utils.technicalOrderFile));
     }
 
     /**

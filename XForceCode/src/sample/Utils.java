@@ -9,8 +9,6 @@ package sample;
  * @author Bernard Chan, Sonali Loomba
  */
 public class Utils {
-    /** Specifies the program user */
-    static boolean bernard;
 
     /** Pre-measured X-Coordinate of left side of table for left-leaning pages */
     static int leftStart = 37;
@@ -46,9 +44,9 @@ public class Utils {
     //didn't do these as we will probably replace these
     static String bernardargs = "true 3";
     static String bernardConfig = "--module-path C:/Users/berna_000/Desktop/XForceCode/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-    static String bernardFile = System.getProperty("user.dir") + "/Pages from 1C-17A-4-33 (2).pdf";
-    static String bernard9006File = System.getProperty("user.dir") + "/my9006.pdf";
-    static String bernardcsv = System.getProperty("user.dir") + "/Mock Warehouse.csv";
+    static String technicalOrderFile = System.getProperty("user.dir") + "/Pages from TO 1C-17A-4-33.pdf";
+    static String f9006File = System.getProperty("user.dir") + "/Blank F9006.pdf";
+    static String supplyCSV = System.getProperty("user.dir") + "/Mock Warehouse.csv";
     static String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33 (2).pdf";
     static String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
     static String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";

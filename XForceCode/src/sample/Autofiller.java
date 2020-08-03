@@ -23,16 +23,11 @@ public class Autofiller {
     /**
      * Autofiller constructor
      *
-     * @param Bernard defines user
      * @throws IOException in case of error loading PDDocument or opening File
      *
      */
-    public Autofiller(boolean Bernard) throws IOException {
-        if (Bernard) {
-            f9006path = new File(Utils.bernard9006File);
-        } else {
-            f9006path = new File(Utils.sonali9006File);
-        }
+    public Autofiller() throws IOException {
+        f9006path = new File(Utils.f9006File);
         f9006 = PDDocument.load(f9006path);
     }
 

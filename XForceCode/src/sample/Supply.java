@@ -14,16 +14,10 @@ public class Supply {
     /**
      * Finds the inventory of a part in the supply database based on the National Stock Number of the part
      * @param nsn the National Stock Number to check
-     * @param bernard specifies the user
      * @return String number amount of the part that is in stock
      */
-    public static String checkInventory(String nsn, boolean bernard) {
-        File csv;
-        if (bernard) {
-            csv = new File(Utils.bernardcsv);
-        } else {
-            csv = new File(Utils.sonalicsv);
-        }
+    public static String checkInventory(String nsn) {
+        File csv = new File(Utils.supplyCSV);
         String quantityInStock = "Not Found";
         try {
             BufferedReader csvReader = new BufferedReader(new FileReader(csv));

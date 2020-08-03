@@ -20,154 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mock Warehouse.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages from 1C-17A-4-33 (2).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.base.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.controls.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.fxml.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.graphics.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.media.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.swing.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-jmods-11.0.2/javafx.web.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-console-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-datetime-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-debug-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-errorhandling-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-file-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-file-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-file-l2-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-handle-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-heap-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-interlocked-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-libraryloader-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-localization-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-memory-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-namedpipe-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-processenvironment-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-processthreads-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-processthreads-l1-1-1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-profile-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-string-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-synch-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-synch-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-sysinfo-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-timezone-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-core-util-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-conio-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-convert-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-environment-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-filesystem-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-heap-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-locale-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-math-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-multibyte-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-private-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-process-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-runtime-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-stdio-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-string-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-time-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/api-ms-win-crt-utility-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/concrt140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/decora_sse.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/fxplugins.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/glass.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/glib-lite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/gstreamer-lite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/javafx_font.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/javafx_iio.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/jfxmedia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/jfxwebkit.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/msvcp140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/prism_common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/prism_d3d.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/prism_sw.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/ucrtbase.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/bin/vcruntime140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.base/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.controls/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.fxml/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.graphics/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/applecoreaudio.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/glib.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/gstreamer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.media/libffi.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.swing/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/icu_web.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/libxml2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/libxslt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/legal/javafx.web/webkit.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx-swt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.base.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.controls.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.fxml.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.graphics.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.media.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.swing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/javafx.web.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib/src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fontbox-2.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-swt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.base.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.controls.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.fxml.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.graphics.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.media.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.swing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx.web.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jsoup-1.13.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pdfbox-2.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pdfbox-app-2.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pdfbox-tools-2.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/preflight-2.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/preflight-app-2.0.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xmpbox-2.0.20.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages from TO 1C-17A-4-33.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blank f9006.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages from 1C-17A-4-33 (2).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Autofiller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PDFDimensionFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Supply.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserEntryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my9006.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Autofiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Autofiller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Supply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Supply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserEntryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/UserEntryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>header</find>
-      <find>file</find>
-      <find>left</find>
-      <find>x</find>
-      <find>parsedinfo</find>
-      <find>parsedinfo.parts</find>
-      <find>getNS</find>
-      <find>start</find>
-      <find>rect</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -186,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595550866573" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/xmpbox-2.0.20.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -196,8 +70,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="XForceCode" />
-      <option name="PROGRAM_PARAMETERS" value="true 3" />
-      <option name="VM_PARAMETERS" value="--module-path $PROJECT_DIR$/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="PROGRAM_PARAMETERS" value="3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -214,7 +87,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -244,39 +117,48 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="490" y="311" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596223078028">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="274" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596495901297">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="274" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1596495901297" />
     <state x="490" y="311" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596223078028" />
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596493700296">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1596493700296" />
     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1596223108416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596223108416" />
     <state x="666" y="271" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1595890048360" />
-    <state width="1038" height="277" key="GridCell.Tab.0.bottom" timestamp="1596051254229">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1596495536007">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596495536007" />
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596051254229" />
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615376" />
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596050824995" />
-    <state width="1038" height="277" key="GridCell.Tab.0.center" timestamp="1596051254229">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1596495536006">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596495536006" />
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596051254229" />
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596050824995" />
-    <state width="1038" height="277" key="GridCell.Tab.0.left" timestamp="1596051254228">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1596495536006">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596495536006" />
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954249" />
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596051254228" />
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596050824995" />
-    <state width="1038" height="277" key="GridCell.Tab.0.right" timestamp="1596051254229">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1596495536007">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596495536007" />
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596051254229" />
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
@@ -285,11 +167,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595639722248" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1596223113298">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="313" y="0" key="SettingsEditor" timestamp="1596225276631">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="313" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596225276631" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596223113298" />
     <state x="470" y="95" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1595890074908" />
+    <state x="183" y="62" width="585" height="592" key="find.popup" timestamp="1596495696968">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="183" y="62" width="585" height="592" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1596495696968" />
     <state x="681" y="308" key="git4idea.merge.GitPullDialog" timestamp="1595639708025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
