@@ -5,8 +5,6 @@ package sample;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
-import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import java.awt.*;
 import java.io.File;

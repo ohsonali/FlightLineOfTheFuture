@@ -9,7 +9,6 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.GregorianCalendar;
 /**
  * Auto fills the F9006 pdf form based on the information stored in <code>PartInfo</code> and <code>TOParser</code>
