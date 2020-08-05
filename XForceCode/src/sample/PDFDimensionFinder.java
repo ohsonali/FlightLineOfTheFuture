@@ -1,3 +1,5 @@
+// File: PDFDimensionFinder.java
+// PDFDimensionFinder class with get methods
 package sample;
 
 import org.apache.pdfbox.text.PDFTextStripperByArea;
@@ -70,6 +72,7 @@ public class PDFDimensionFinder extends PDFTextStripperByArea {
             int currentY = (int) (pos.getY() - pos.getHeight());
             if (!rowYCoordinates.contains(currentY)) {
                 rowYCoordinates.add(currentY);
+                System.out.print(currentY + ",");
             }
         }
     }

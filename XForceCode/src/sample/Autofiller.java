@@ -1,3 +1,6 @@
+// File: Autofiller.java
+// Autofiller class with autofilling logic
+
 package sample;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -6,7 +9,6 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.GregorianCalendar;
 /**
  * Auto fills the F9006 pdf form based on the information stored in <code>PartInfo</code> and <code>TOParser</code>
@@ -20,16 +22,11 @@ public class Autofiller {
     /**
      * Autofiller constructor
      *
-     * @param Bernard defines user
      * @throws IOException in case of error loading PDDocument or opening File
      *
      */
-    public Autofiller(boolean Bernard) throws IOException {
-        if (Bernard) {
-            f9006path = new File(Utils.bernard9006File);
-        } else {
-            f9006path = new File(Utils.sonali9006File);
-        }
+    public Autofiller() throws IOException {
+        f9006path = new File(Utils.f9006File);
         f9006 = PDDocument.load(f9006path);
     }
 
@@ -113,6 +110,7 @@ public class Autofiller {
             field.setValue(time);
 
             f9006.save(f9006path.getPath());
+            f9006.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

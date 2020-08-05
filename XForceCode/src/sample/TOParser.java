@@ -5,8 +5,6 @@ package sample;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
-import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import java.awt.*;
 import java.io.File;
@@ -20,7 +18,6 @@ import java.util.Collections;
  * @author Bernard Chan, Sonali Loomba
  *
 */
-
 public class TOParser {
     /** Stores current PDF document */
     private final PDDocument technicalOrder;
@@ -43,18 +40,13 @@ public class TOParser {
     /**
      * TOParser constructor
      *
-     * @param Bernard defines user
      * @param page page number of technical order
      * @throws IOException in case of error opening PDDocument
      *
      */
-    public TOParser(boolean Bernard, int page) throws IOException {
+    public TOParser(int page) throws IOException {
         this.page = page;
-        if (Bernard) {
-            technicalOrder = PDDocument.load(new File(Utils.bernardFile));
-        } else {
-            technicalOrder = PDDocument.load(new File(Utils.sonaliFile));
-        }
+        technicalOrder = PDDocument.load(new File(Utils.technicalOrderFile));
     }
 
     /**
