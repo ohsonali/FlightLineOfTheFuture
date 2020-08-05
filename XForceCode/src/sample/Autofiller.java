@@ -9,6 +9,8 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.GregorianCalendar;
 /**
  * Auto fills the F9006 pdf form based on the information stored in <code>PartInfo</code> and <code>TOParser</code>
@@ -17,17 +19,17 @@ import java.util.GregorianCalendar;
 public class Autofiller {
     /** The F9006 pdf document as a PDDocument */
     private final PDDocument f9006;
-    /** The F9006 pdf document as a File */
-    private final File f9006path;
+    /** The F9006 pdf document file path */
+    private static String f9006path;
+
     /**
-     * Autofiller constructor
+     * Autofiller constructor that creates a copy of the blank F9006 PDF Document
      *
      * @throws IOException in case of error loading PDDocument or opening File
      *
      */
     public Autofiller() throws IOException {
-        f9006path = new File(Utils.f9006File);
-        f9006 = PDDocument.load(f9006path);
+        f9006 = PDDocument.load(createF9006());
     }
 
     /**
@@ -37,11 +39,6 @@ public class Autofiller {
         try {
             PDAcroForm pDAcroForm = f9006.getDocumentCatalog().getAcroForm();
 
-            for (PDField field : pDAcroForm.getFields()) {
-                if (field.getFieldType().equals("Tx")) {
-                    field.setValue("");
-                }
-            }
 
             //Part
             PDField field = pDAcroForm.getField("JCN");
@@ -109,10 +106,57 @@ public class Autofiller {
             field = pDAcroForm.getField("NeedTime");
             field.setValue(time);
 
-            f9006.save(f9006path.getPath());
+            f9006.save(f9006path);
             f9006.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Creates a new F9006 for new part order
+     * @return File of newly created F9006 PDF
+     * @throws IOException if file path is unable to load
+     */
+    public File createF9006() throws IOException{
+        int counter = 0;
+        String f9006FileString = System.getProperty("user.dir") + "/F9006 History/F9006 "
+                + PartInfo.getCurrentPart().getPartNum().replaceAll("[#=]", "").trim();
+        if (new File(f9006FileString+".pdf").exists()){
+            counter = 1;
+            while (new File(f9006FileString + " (" + counter + ").pdf").exists()) {
+                counter += 1;
+            }
+        }
+        if (counter == 0){
+            f9006path =f9006FileString + ".pdf";
+        }
+        else{
+            f9006path = f9006FileString + " (" + counter + ").pdf";
+        }
+        Files.copy(Paths.get(Utils.blankF9006File), Paths.get(f9006path));
+        return new File(f9006path);
+    }
+
+    /**
+     * Clears text fields from filled out F9006 PDF
+     * @param pDAcroForm F9006 PDF as a PDAcroForm
+     * @throws IOException if field is unable to load
+     */
+    public void clearF9006(PDAcroForm pDAcroForm) throws IOException {
+        for (PDField field : pDAcroForm.getFields()) {
+            if (field.getFieldType().equals("Tx")) {
+                field.setValue("");
+            }
+        }
+    }
+
+    /**
+     * Return F9006 file path
+     * @return String of F9006 file path
+     */
+    public static String getF9006path(){
+        return f9006path;
+    }
+
 }

@@ -23,6 +23,9 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 
 
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -38,6 +41,8 @@ public class MainController implements Initializable {
     @FXML Text figure;
     /** fx id of Text displaying the parts' corresponding figure description */
     @FXML Text figureDescription;
+    /** fx id of Button to open order history folder */
+    @FXML Button orderHistory;
 
 
     /**
@@ -262,4 +267,12 @@ public class MainController implements Initializable {
         return str.split("\r\n|\r|\n");
     }
 
+    public void orderHistoryClicked (ActionEvent e) throws IOException {
+        if (!Desktop.isDesktopSupported()) {
+            System.out.println("Desktop Not Supported");
+            System.exit(0);
+        } else {
+             Desktop.getDesktop().open(new File(System.getProperty("user.dir") + "/F9006 History"));
+        }
+    }
 }

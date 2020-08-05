@@ -43,7 +43,7 @@ public class Utils {
     /** File path to Technical Order PDF */
     static String technicalOrderFile = System.getProperty("user.dir") + "/Pages from TO 1C-17A-4-33.pdf";
     /** File path to Blank F9006 Form PDF */
-    static String f9006File = System.getProperty("user.dir") + "/Blank F9006.pdf";
+    static String blankF9006File = System.getProperty("user.dir") + "/Blank F9006.pdf";
     /** File path to Mock Supply Database CSV */
     static String supplyCSV = System.getProperty("user.dir") + "/Mock Warehouse.csv";
 }

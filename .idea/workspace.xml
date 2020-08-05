@@ -20,29 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/pdfbox_app_2_0_20.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/XForceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/XForceCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/NSNScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/NSNScrape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/MainController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/MainController.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/PartInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Supply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my9006.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blank f9006.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/blank f9006.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Autofiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Autofiller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/NSNScrape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/NSNScrape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PDFDimensionFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/PDFDimensionFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/PartInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Supply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Supply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/TOParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/UserEntryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/UserEntryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/MainController.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XForceCode/sample/Utils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="222">
+              <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,11 +60,60 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <element signature="e#5715#5716#0" expanded="true" />
+                <element signature="e#5747#5748#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="271" column="53" selection-start-line="271" selection-start-column="53" selection-end-line="271" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSNController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="53" column="111" selection-start-line="53" selection-start-column="106" selection-end-line="53" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="45" column="65" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UnitTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,7 +126,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.trim</find>
+      <find>f9006File</find>
     </findStrings>
+    <replaceStrings>
+      <replace>blankF9006File</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,13 +139,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/XForceCode/src/sample/TOParser.java" />
-        <option value="$PROJECT_DIR$/XForceCode/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java" />
+        <option value="$PROJECT_DIR$/XForceCode/src/sample/Utils.java" />
+        <option value="$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java" />
+        <option value="$PROJECT_DIR$/XForceCode/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/XForceCode/src/sample/MainController.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="40" />
     <option name="width" value="1440" />
     <option name="height" value="810" />
   </component>
@@ -112,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,7 +189,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -147,7 +200,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596585925796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596662565341" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -235,11 +288,14 @@
     <history-entry file="UnitTests - 2020.08.04 at 16h 28m 42s.xml">
       <configuration name="UnitTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UnitTests - 2020.08.04 at 17h 08m 24s.xml">
+      <configuration name="UnitTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="810" extended-state="0" />
+    <frame x="0" y="40" width="1440" height="810" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.27825466" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.28183118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -248,12 +304,12 @@
       <window_info id="Favorites" order="6" sideWeight="0.50104386" side_tool="true" weight="0.28898427" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32729805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32729805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3286908" />
       <window_info anchor="bottom" id="Style Checker" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -262,7 +318,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -377,24 +433,10 @@
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="38" column="17" selection-start-line="38" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="641">
           <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -423,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSNController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="53" column="111" selection-start-line="53" selection-start-column="106" selection-end-line="53" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UserEntryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
@@ -444,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Supply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -461,30 +489,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/PDFDimensionFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="286">
+          <caret line="45" column="65" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/NSNController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="53" column="111" selection-start-line="53" selection-start-column="106" selection-end-line="53" selection-end-column="111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="222">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/UnitTests.java">
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/Autofiller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="195">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5715#5716#0" expanded="true" />
+            <element signature="e#5747#5748#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XForceCode/src/sample/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="271" column="53" selection-start-line="271" selection-start-column="53" selection-end-line="271" selection-end-column="53" />
         </state>
       </provider>
     </entry>

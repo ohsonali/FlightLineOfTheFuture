@@ -21,11 +21,10 @@ public class Main extends Application {
                 Autofiller f9006filler = new Autofiller();
                 f9006filler.fill9006();
                 if (!Desktop.isDesktopSupported()) {
-                    System.out.println("not supported");
+                    System.out.println("Desktop Not Supported");
                     System.exit(0);
                 } else {
-                    Desktop desktop = Desktop.getDesktop();
-                    desktop.open(new File(Utils.f9006File));
+                    Desktop.getDesktop().open(new File(Autofiller.getF9006path()));
                 }
             }
         }
