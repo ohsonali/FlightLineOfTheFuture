@@ -267,6 +267,11 @@ public class MainController implements Initializable {
         return str.split("\r\n|\r|\n");
     }
 
+    /**
+     * Opens order history folder
+     * @param e button clicked
+     * @throws IOException if folder is unable to load
+     */
     public void orderHistoryClicked (ActionEvent e) throws IOException {
         if (!Desktop.isDesktopSupported()) {
             System.out.println("Desktop Not Supported");
