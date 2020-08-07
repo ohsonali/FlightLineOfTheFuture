@@ -39,7 +39,7 @@ public class NSNScrape {
             Elements cages = row.select("a[href^='https://www.cagecode.info/']");
             // code assumes we will only find one nsns and one cages per row
             for (Element nsn : nsns) {
-                entry[0] = nsn.text();
+                entry[0] = nsn.text().trim();
                 Pattern descriptions = Pattern.compile(",'name':'(.*?)','category':'");
                 Matcher matcher = descriptions.matcher(nsn.attr("onclick"));
                 while (matcher.find()) {
@@ -56,7 +56,7 @@ public class NSNScrape {
                             description += desc;
                         }
                     }
-                    entry[1] = description;
+                    entry[1] = description.trim();
                 }
             }
             String cageStrings = "";
@@ -70,7 +70,7 @@ public class NSNScrape {
                 }
                 counter += 1;
             }
-            entry[2] = cageStrings;
+            entry[2] = cageStrings.trim();
             if (entry[0] != null) {
                 NSNScrape.getScrapedNSNs().add(entry);
             }

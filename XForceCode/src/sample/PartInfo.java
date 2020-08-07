@@ -2,8 +2,6 @@
 // TOParser PartInfo with get and set methods
 package sample;
 
-import java.io.IOException;
-import java.util.ArrayList;
 /**
  * This class stores the user-entered and parsed/scraped information about the part
  *

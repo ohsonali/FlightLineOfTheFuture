@@ -15,11 +15,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -58,7 +53,7 @@ public class UserEntryController implements Initializable {
         partNumber.setText("Part Number: " + PartInfo.getCurrentPart().getPartNum().replaceAll("[#=]", "").trim());
         nsn.setText("NSN: " + PartInfo.getCurrentNSN().getNsn());
         description.setText("Description: " + PartInfo.getCurrentPart().getDescription());
-        stock.setText("Quantity in Stock: " + Supply.checkInventory(PartInfo.getCurrentNSN().getNsn(), Utils.bernard));
+        stock.setText("Quantity in Stock: " + Supply.checkInventory(PartInfo.getCurrentNSN().getNsn()));
     }
 
     /**

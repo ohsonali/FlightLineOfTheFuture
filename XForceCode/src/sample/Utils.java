@@ -9,8 +9,6 @@ package sample;
  * @author Bernard Chan, Sonali Loomba
  */
 public class Utils {
-    /** Specifies the program user */
-    static boolean bernard;
 
     /** Pre-measured X-Coordinate of left side of table for left-leaning pages */
     static int leftStart = 37;
@@ -42,15 +40,10 @@ public class Utils {
     static int pageWidth = 611;
     /** Pre-measured height of the header containing the Technical Order number and Volume */
     static int headerHeight = 44;
-
-    //didn't do these as we will probably replace these
-    static String bernardargs = "true 3";
-    static String bernardConfig = "--module-path C:/Users/berna_000/Desktop/javafx-sdk-12/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-    static String bernardFile = System.getProperty("user.dir") + "/Pages from 1C-17A-4-33 (2).pdf";
-    static String bernard9006File = System.getProperty("user.dir") + "/my9006.pdf";
-    static String bernardcsv = System.getProperty("user.dir") + "/Mock Warehouse.csv";
-    static String sonaliFile = "/Users/ohsonali/Documents/X-Force/Pages from 1C-17A-4-33 (2).pdf";
-    static String sonaliConfig = "--module-path /Applications/javafx/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml";
-    static String sonali9006File = "/Users/ohsonali/Documents/X-Force/my9006.pdf";
-    static String sonalicsv = "/Users/ohsonali/Documents/X-Force/Mock Warehouse.csv";
+    /** File path to Technical Order PDF */
+    static String technicalOrderFile = System.getProperty("user.dir") + "/Pages from TO 1C-17A-4-33.pdf";
+    /** File path to Blank F9006 Form PDF */
+    static String blankF9006File = System.getProperty("user.dir") + "/Blank F9006.pdf";
+    /** File path to Mock Supply Database CSV */
+    static String supplyCSV = System.getProperty("user.dir") + "/Mock Warehouse.csv";
 }
