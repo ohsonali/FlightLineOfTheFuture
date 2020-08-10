@@ -10,7 +10,7 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 4. Enter page number of Technical Order that you would like to parse as a program argument (limited to 3 and 4 based on the declassified Technical Order pages we provided)
 
 
-<img src="https://www.stripes.com/news/us/air-force-needs-to-do-more-to-keep-experienced-maintainers-report-says-1.567692#gallery"
+<img src="https://www.stripes.com/polopoly_fs/1.567693.1549556653!/image/image.jpg_gen/derivatives/landscape_900/image.jpg"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
      
