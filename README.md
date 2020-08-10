@@ -13,9 +13,9 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 4. Enter page number of Technical Order that you would like to parse as a program argument (limited to 3 and 4 based on the declassified Technical Order pages we provided)
 
 ## Project Videos
-# Problem Statement 
+### Problem Statement 
 [![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
-# Methodology
-[![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
-# Program Demonstration 
-[![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
+### Methodology
+[![Methodology](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Methodology")
+### Program Demonstration 
+[![Problem Demonstration](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Demonstration")
