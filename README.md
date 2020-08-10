@@ -8,7 +8,10 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 2. Clone the repository from GitHub
 3. In Run Configurations, enter “--module-path *YOUR PATH TO: /javafx-sdk-11.0.2/lib* --add-modules javafx.controls,javafx.fxml”
 4. Enter page number of Technical Order that you would like to parse as a program argument (limited to 3 and 4 based on the declassified Technical Order pages we provided)
-[<img align="left" alt = "Visual Studio Code" width"26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />]
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+     
 [![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
 <br  />
 [Program Demonstration]( https://youtu.be/r6b1EaxC-VU)
