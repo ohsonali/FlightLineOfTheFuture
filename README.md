@@ -12,7 +12,7 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 
 <img src="https://www.stripes.com/polopoly_fs/1.567693.1549556653!/image/image.jpg_gen/derivatives/landscape_900/image.jpg"
      alt="Maintenence Operator"
-     style="float: left; margin-right: 5px;" />
+     style="float: left; margin-right: 10px;" />
      
      
 [![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
