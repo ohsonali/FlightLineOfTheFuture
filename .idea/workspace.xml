@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="" />
+    <list default="true" id="6ecb3334-1319-45b8-bee1-7c08ae568c45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,32 +128,32 @@
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596830769572" />
     <state x="666" y="271" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1595890048360" />
-    <state width="1038" height="300" key="GridCell.Tab.0.bottom" timestamp="1597100985278">
+    <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1597101538080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
-    <state width="1038" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597100985278" />
+    <state width="1877" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538080" />
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615376" />
     <state width="1038" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135162" />
-    <state width="1038" height="300" key="GridCell.Tab.0.center" timestamp="1597100985278">
+    <state width="1877" height="300" key="GridCell.Tab.0.center" timestamp="1597101538079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
-    <state width="1038" height="300" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597100985278" />
+    <state width="1877" height="300" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538079" />
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="299" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135162" />
-    <state width="1038" height="300" key="GridCell.Tab.0.left" timestamp="1597100985277">
+    <state width="1877" height="300" key="GridCell.Tab.0.left" timestamp="1597101538079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954249" />
-    <state width="1038" height="300" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597100985277" />
+    <state width="1877" height="300" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538079" />
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="299" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135161" />
-    <state width="1038" height="300" key="GridCell.Tab.0.right" timestamp="1597100985278">
+    <state width="1877" height="300" key="GridCell.Tab.0.right" timestamp="1597101538080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
-    <state width="1038" height="300" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597100985278" />
+    <state width="1877" height="300" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538080" />
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="299" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135162" />
     <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1596829673681">
