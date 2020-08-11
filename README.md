@@ -11,7 +11,7 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 2. Clone the repository from GitHub
 3. In Run Configurations, enter “--module-path *YOUR PATH TO: /javafx-sdk-11.0.2/lib* --add-modules javafx.controls,javafx.fxml”
 4. Download the PDFBox, JSoup, JavaFX, and JUnit libraries or add the .jar files from FlightLineOFTheFuture/lib to the Project Structure
-5. Enter the page number of the Technical Order to be used as a program argument (limited to 3 and 4 based on the small selection of declassified Technical Order pages provided)
+5. Enter a page number of the Technical Order to order from that page (limited to 3 and 4 based on the small selection of declassified Technical Order pages provided)
 
 ## Project Videos
 ### Problem Statement 
