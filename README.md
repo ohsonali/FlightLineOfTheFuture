@@ -16,7 +16,7 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 ### Problem Statement 
 [![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
 ### Methodology
-[![Methodology](http://img.youtube.com/vi/TsZh8A7L9Do/0.jpg)](https://youtu.be/TsZh8A7L9Do "Methodology")
+[![Methodology](http://img.youtube.com/vi/UX1NaFna_Nc/0.jpg)](https://youtu.be/UX1NaFna_Nc "Methodology")
 ### Program Demonstration 
 [![Problem Demonstration](http://img.youtube.com/vi/TsZh8A7L9Do/0.jpg)](https://youtu.be/TsZh8A7L9Do "Problem Demonstration")
 
