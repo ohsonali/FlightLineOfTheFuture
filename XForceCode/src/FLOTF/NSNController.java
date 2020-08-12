@@ -62,6 +62,7 @@ public class NSNController implements Initializable {
         TableColumn<NSN, Void> colBtn = new TableColumn("Button Column");
         TableColumn<NSN, Void> infoBtn = new TableColumn ("More Info");
 
+        /* Hover function to be implemented to check inventory
         tableView.setRowFactory(tv -> {
             TableRow<NSN> row = new TableRow<>();
             row.setOnMouseEntered(event -> {
@@ -74,7 +75,7 @@ public class NSNController implements Initializable {
                 }
             });
             return row ;
-        });
+        });*/
 
         Callback<TableColumn<NSN, Void>, TableCell<NSN, Void>> cellFactory = new Callback<TableColumn<NSN, Void>, TableCell<NSN, Void>>() {
             @Override
