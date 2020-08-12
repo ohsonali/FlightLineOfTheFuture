@@ -12,6 +12,9 @@ This project, by NSIN X-Force interns Bernard Chan and Sonali Loomba, is centere
 4. Download the PDFBox, JSoup, JavaFX, and JUnit libraries or add the .jar files from FlightLineOFTheFuture/lib to the Project Structure
 5. Enter a page number of the Technical Order to order from that page (limited to 3 and 4 based on the small selection of declassified Technical Order pages provided)
 
+## Project Documentation
+View the project Java Documentation [here.](https://bernardmc8.github.io/FLOTFJavaDoc/)
+
 ## Project Videos
 ### Problem Statement 
 [![Problem Statement](http://img.youtube.com/vi/L2CiMDEHdH8/0.jpg)](https://youtu.be/L2CiMDEHdH8 "Problem Statement")
