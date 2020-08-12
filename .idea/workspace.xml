@@ -57,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595550866573" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/xmpbox-2.0.20.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -115,10 +115,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="581" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596830903866">
+    <state x="581" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597267093806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="581" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596830903866" />
+    <state x="581" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597267093806" />
     <state x="227" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1597100985226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -128,32 +128,32 @@
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596830769572" />
     <state x="666" y="271" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1595890048360" />
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1597101538080">
+    <state width="1038" height="300" key="GridCell.Tab.0.bottom" timestamp="1597268230365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538080" />
+    <state width="1038" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597268230365" />
     <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615376" />
     <state width="1038" height="299" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135162" />
-    <state width="1877" height="300" key="GridCell.Tab.0.center" timestamp="1597101538079">
+    <state width="1038" height="300" key="GridCell.Tab.0.center" timestamp="1597268230365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
-    <state width="1877" height="300" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538079" />
+    <state width="1038" height="300" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597268230365" />
     <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="299" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135162" />
-    <state width="1877" height="300" key="GridCell.Tab.0.left" timestamp="1597101538079">
+    <state width="1038" height="300" key="GridCell.Tab.0.left" timestamp="1597268230365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954249" />
-    <state width="1877" height="300" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538079" />
+    <state width="1038" height="300" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597268230365" />
     <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="299" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135161" />
-    <state width="1877" height="300" key="GridCell.Tab.0.right" timestamp="1597101538080">
+    <state width="1038" height="300" key="GridCell.Tab.0.right" timestamp="1597268230365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/1920.154.1360.768@0.0.1920.1040" timestamp="1595887954250" />
-    <state width="1877" height="300" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597101538080" />
+    <state width="1038" height="300" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597268230365" />
     <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1080/1920.154.1360.768@0.0.1920.1080" timestamp="1595889615375" />
     <state width="1038" height="299" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596833135162" />
     <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1596829673681">
